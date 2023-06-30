@@ -1,0 +1,8 @@
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  height: $nav-height;
+  width: 100vw;
+  align-items: center;
+  border: 1px solid $compsa-purple;
+}
