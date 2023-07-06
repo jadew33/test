@@ -10,10 +10,10 @@ Then to start the development server, I usually run:
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-For all styles, I have created a styles folder inside the app folder. You can find the file corresponding to each component there.
-If you look in globals.scss (for now, outside of the styles folder, but still inside app), you can find that all of these files are imported. Now, because globals.scss is imported in the home page (this is the page.js that is inside the app folder, but outside all of the other component folders), the styles can be used by every other page.js without importing the specific scss file. This also means that if you create a new scss file, you will have to write an import statement inside globals.scss. (Do not import your file above \_variables.scss, your file may not have access to the variables if so).
-For all variables (colours, breakpoints, fonts) please reference them from \_variables.scss. Again, since all of the files were imported in globals.scss, you can use these variables on each scss file.
-Please look at the Navbar and Footer (both the scss file and their js files in the app folder) for examples of use.
+For all styles, I have created a styles folder inside the app folder. You can find the file corresponding to each component there. <br/>
+If you look in /app/globals.scss, you can find that all of these files are imported. Now, because app/globals.scss is imported in app/page.js, the styles can be used by every other /(component)/page.js without importing the specific scss file. This also means that if you create a new scss file, you will have to write an import statement inside /app/globals.scss. (Do not import your file above /app/styles/variables.scss, your file may not have access to the variables if so). <br/>
+For all variables (colours, breakpoints, fonts) please reference them from /app/styles/variables.scss. Again, since all of the files were imported in app/globals.scss, you can use these variables on each scss file.<br/>
+Please look at the Navbar and Footer (both the styles/scss files and /app/Footer.js or Navbar.js) for examples of use. <br/>
 If this doesn't work as I described, please dm me and we can sort this out.
 
 ## Learn More
