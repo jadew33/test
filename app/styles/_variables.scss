@@ -1,5 +1,5 @@
-// Colours!! Please reference these variables in other files whenever you use a colour. 
-// Example of how to do so within the events scss file. 
+// Colours!! Please reference these variables in other files whenever you use a colour.
+// Example of how to do so within the events scss file.
 $compsa-purple: #c686f3;
 $compsa-indigo: #5d15d2;
 $compsa-black: #1f1f1f;
@@ -13,13 +13,13 @@ $nav-height: 8vh;
 $footer-height: 8vh;
 $offset: calc($nav-height + $footer-height);
 
-// Breakpoints - would prefer to keep it to these variables when using media queries. 
-// However, if it doesn't work with the content feel free to hard code a value 
+// Breakpoints - would prefer to keep it to these variables when using media queries.
+// However, if it doesn't work with the content feel free to hard code a value
 // However, if there is too much that needs to be hardcoded, it is likely that there is a better
 // way to implement it.
 $xs: 320px; // even smaller mobile
 $s: 480px; // mobile
 $m: 768px; // ipads, tablets
-$lg: 1024px // small laptops
-$xl: 1200px;// laptops
+$lg: 1024px; // small laptops
+$xl: 1200px; // laptops
 // I assume anything larger than that will be fine
