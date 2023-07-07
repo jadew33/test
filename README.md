@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-When you clone this locally, make sure to `npm i` to install all of the required dependencies.
+When you clone this locally, make sure to `npm i` at the root folder (the one with /package-lock.json) to install all of the required dependencies.
 
 Then to start the development server, I usually run:
 
