@@ -1,5 +1,5 @@
-import React from "react";
 import "../styles/resources.scss";
+import Section from "./components/Section";
 
 export default function Resources() {
     return (
@@ -11,6 +11,11 @@ export default function Resources() {
                     Note, if you would like us to get back to you personally, please leave your
                     email!
                 </p>
+                <Section title="COMPSA"></Section>
+                <Section title="EVENTS AND SOCIALS"></Section>
+                <Section title="EQUITY"></Section>
+                <Section title="ACADEMICS"></Section>
+                <Section title="PROFESSIONAL DEVELOPMENT"></Section>
             </div>
         </div>
     );
