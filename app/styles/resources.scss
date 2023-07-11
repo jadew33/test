@@ -42,3 +42,37 @@
         }
     }
 }
+
+.link-button {
+    display: flex;
+    align-items: center;
+    background-color: $compsa-white;
+    color: $compsa-black;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    &:hover {
+        background-color: $compsa-purple;
+        color: $compsa-white;
+    }
+    .text-div {
+        color: $compsa-black;
+        width: 100%;
+        p {
+            color: $compsa-black;
+            margin: 0.5rem;
+            font-size: 1rem;
+        }
+        h6 {
+            margin: 0.5rem;
+            font-size: 1.25rem;
+        }
+    }
+    .icon-div {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
