@@ -1,2 +1,51 @@
-.about {
+$compsa-purple: #c686f3;
+$compsa-indigo: #5d15d2;
+$compsa-black: #1f1f1f;
+$compsa-white: #f0f0f0;
+$compsa-yellow: #d7de21;
+
+.aboutSection {
+  color: $compsa-white;
+
+  .top {
+    background: linear-gradient(180deg, rgba(31, 31, 31, 0) 0%, #1f1f1f 100%);
+    .image {
+      background-color: red;
+      .top-text {
+        width: 650px;
+        padding: 350px 100px 100px 150px;
+        border: #1f1f1f;
+        border-width: 5px;
+
+        h6 {
+          color: $compsa-yellow;
+          font-family: Gotham;
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 46px;
+          letter-spacing: 0em;
+          text-align: left;
+          .compsa {
+            font-family: Gotham;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+        }
+        p {
+          margin-top: 40px;
+          font-family: Gotham;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .bottom {
+    background: linear-gradient(180deg, #1f1f1f 0%, #5d15d2 100%), #1f1f1f;
+    height: 800px;
+  }
 }
