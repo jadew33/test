@@ -61,11 +61,11 @@
         width: 100%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         p {
             color: $compsa-black;
             margin: 0.5rem;
             font-size: 1rem;
-            width: 100%;
             text-align: right;
         }
         h6 {
