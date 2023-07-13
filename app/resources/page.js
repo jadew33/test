@@ -17,6 +17,7 @@ export default function Resources() {
                         link="https://www.instagram.com/compsa/"
                         title="Instagram"
                         icon="🔗"
+                        date="08 / 04 / 2022"
                     ></Link>
                     <Link
                         link="https://www.linkedin.com/company/queenscompsa/"

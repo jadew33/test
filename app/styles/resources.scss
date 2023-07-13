@@ -20,8 +20,8 @@
 }
 
 .content {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 25%;
+    padding-right: 25%;
     padding-top: 10%;
     padding-bottom: 1rem;
 }
@@ -59,10 +59,14 @@
     .text-div {
         color: $compsa-black;
         width: 100%;
+        display: flex;
+        align-items: center;
         p {
             color: $compsa-black;
             margin: 0.5rem;
             font-size: 1rem;
+            width: 100%;
+            text-align: right;
         }
         h6 {
             margin: 0.5rem;
