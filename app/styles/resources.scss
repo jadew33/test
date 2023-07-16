@@ -90,9 +90,16 @@
     text-decoration: none;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+
     &:hover {
         background-color: $compsa-purple;
         color: $compsa-white;
+    }
+
+    &:active {
+        transform: scale(0.95); /* Scale down the button to 95% of its original size */
+        background-color: darken($compsa-purple, 10%);
     }
     .text-div {
         color: $compsa-black;
