@@ -67,3 +67,42 @@
         font-size: 0.65rem;
     }
 }
+
+.contact-grid {
+    display: grid;
+    grid-template-areas:
+        "text-content map"
+        "note map"
+        "name-field map"
+        "email-field map"
+        "message-field map"
+        "submit nothing";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr 2fr 1fr;
+    gap: 0.5em;
+}
+
+.text-content {
+    grid-area: text-content;
+}
+.note {
+    grid-area: note;
+}
+
+.map {
+    grid-area: map;
+    width: 100%;
+}
+
+.name-field {
+    grid-area: name-field;
+}
+.email-field {
+    grid-area: email-field;
+}
+.message-field {
+    grid-area: message-field;
+}
+.submit {
+    grid-area: submit;
+}
