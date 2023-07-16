@@ -1,3 +1,6 @@
+import "../styles/contact.scss";
+import Portfolio from "./components/Portfolio";
+
 export default function Contact() {
     return (
         <div className="contact">
@@ -13,13 +16,49 @@ export default function Contact() {
                 <button className="submit" type="submit">
                     Submit Message
                 </button>
-                <img
-                    className="map"
-                    src="https://philiaweb.com/uploads/image/google-maps.png"
-                ></img>
+                <div className="map" id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1429.4907395572868!2d-76.49330808234704!3d44.228039697138335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2ab03bf601895%3A0x43ec4238203bf382!2sGoodwin%20Hall!5e0!3m2!1sen!2sca!4v1689536857111!5m2!1sen!2sca"
+                        style={{ border: 0 }}
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
             </div>
             <h3>LOOKING FOR A SPECIFIC PORTFOLIO?</h3>
-            <div className="portfolio-grid"></div>
+            <div className="portfolio-grid">
+                <Portfolio
+                    className="academics"
+                    title={"Academics"}
+                    email={"academics@compsa.queensu.ca"}
+                ></Portfolio>
+                <Portfolio
+                    className="equity"
+                    title={"Equity"}
+                    email={"equity@compsa.queensu.ca"}
+                ></Portfolio>
+                <Portfolio
+                    className="events"
+                    title={"Events"}
+                    email={"events@compsa.queensu.ca"}
+                ></Portfolio>
+                <Portfolio
+                    className="internal-affairs"
+                    title={"Internal Affairs"}
+                    email={"ia@compsa.queensu.ca"}
+                ></Portfolio>
+                <Portfolio
+                    className="marketing"
+                    title={"Marketing"}
+                    email={"marketing@compsa.queensu.ca"}
+                ></Portfolio>
+                <Portfolio
+                    className="professional-development"
+                    title={"Professional Development"}
+                    email={"pd@compsa.queensu.ca"}
+                ></Portfolio>
+            </div>
         </div>
     );
 }
