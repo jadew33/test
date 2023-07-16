@@ -117,7 +117,9 @@
     grid-area: submit;
     border-radius: 8px;
     outline: none;
-    border: none;
+    border: 2px solid $compsa-white;
+    color: $compsa-white;
+    background-color: transparent;
     padding: 1em;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
 

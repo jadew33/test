@@ -9,7 +9,7 @@ export default function Contact() {
                 </p>
                 <input className="name-field" type="text" placeholder="Name"></input>
                 <input className="email-field" type="text" placeholder="Email"></input>
-                <textarea className="message-field" placeholder="Message" required></textarea>
+                <textarea className="message-field" placeholder="Message *" required></textarea>
                 <button className="submit" type="submit">
                     Submit Message
                 </button>
