@@ -4,13 +4,23 @@ $compsa-black: #1f1f1f;
 $compsa-white: #f0f0f0;
 $compsa-yellow: #d7de21;
 
+@mixin gotham-text($size, $weight: 400, $style: normal, $line-height: normal) {
+  font-family: Gotham;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+  line-height: $line-height;
+}
+
 .aboutSection {
   color: $compsa-white;
 
   .top {
     background: linear-gradient(180deg, rgba(31, 31, 31, 0) 0%, #1f1f1f 100%);
+
     .image {
       background-color: red;
+
       .top-text {
         width: 650px;
         padding: 350px 100px 100px 150px;
@@ -19,33 +29,91 @@ $compsa-yellow: #d7de21;
 
         h6 {
           color: $compsa-yellow;
-          font-family: Gotham;
-          font-size: 48px;
-          font-weight: 700;
-          line-height: 46px;
-          letter-spacing: 0em;
+          @include gotham-text(48px, 700, normal, 46px);
           text-align: left;
+          letter-spacing: 0em;
+
           .compsa {
-            font-family: Gotham;
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
+            @include gotham-text(48px, 700);
           }
         }
         p {
           margin-top: 40px;
-          font-family: Gotham;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+          @include gotham-text(24px);
         }
       }
     }
   }
+
   .bottom {
     background: linear-gradient(180deg, #1f1f1f 0%, #5d15d2 100%), #1f1f1f;
-    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    @include gotham-text(16);
+    border: solid black;
+    padding: 200px;
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      h6 {
+        @include gotham-text(36px, 700);
+        margin: 0 20px; // Add horizontal space around the title
+      }
+
+      .title-line {
+        flex-grow: 1; // This makes the lines take up all remaining space
+        height: 1px;
+        background-color: $compsa-yellow;
+      }
+      margin-bottom: 50px;
+    }
+    .box-container {
+      width: 100%;
+      .box {
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 16px;
+        background: rgba(245, 245, 245, 0.9);
+        box-shadow: 5px 4px 16px 0px rgba(0, 0, 0, 0.25);
+        color: $compsa-black;
+        h6 {
+          font-size: 24px;
+        }
+
+        .box-image {
+          border-radius: 8px;
+        }
+
+        .box-content {
+          width: 67%;
+          padding: 20px;
+          div {
+            margin: 10px 2px 10px 0px;
+          }
+
+          .title {
+            font-weight: 900;
+          }
+
+          .btn {
+            border-radius: 8px;
+            background: $compsa-indigo;
+            padding: 12px 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: $compsa-white;
+            width: 60%;
+          }
+        }
+      }
+    }
   }
 }
