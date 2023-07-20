@@ -1,4 +1,6 @@
 "use client";
+import emailjs from "@emailjs/browser";
+emailjs.init("8YPD4FRFeJpmKkj7B");
 
 export default function ContactButton() {
     const handleClick = () => {
@@ -9,8 +11,22 @@ export default function ContactButton() {
             alert("Please enter a message");
             return;
         }
-        const mailtoLink = `mailto:compsa@compsa.queensu.ca?subject=Contact from ${name}&body=${message} My contact email is ${email}`;
-        window.location.href = mailtoLink;
+        const templateParams = {
+            from_name: name,
+            reply_to: email,
+            message: message,
+        };
+        emailjs.send("service_41qe1yo", "template_tyb1jmq", templateParams).then(
+            function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+            },
+            function (error) {
+                console.log("FAILED...", error);
+            },
+        );
+        document.getElementById("name-field").value = "";
+        document.getElementById("email-field").value = "";
+        document.getElementById("message-field").value = "";
     };
 
     return (
