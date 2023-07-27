@@ -16,101 +16,144 @@ $compsa-yellow: #d7de21;
   color: $compsa-white;
 
   .top {
-    background: linear-gradient(180deg, rgba(31, 31, 31, 0) 0%, #1f1f1f 100%);
+    background: linear-gradient(180deg, rgba(31, 31, 31, 0) 0%, #1f1f1f 100%),
+      url('../about/compsci.png');
+    background-size: cover; /* Cover the entire content box */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    height: auto;
+    height: 100%;
 
-    .image {
-      background-color: red;
+    @media screen and (min-width: 768px) {
+    }
 
-      .top-text {
-        width: 650px;
-        padding: 350px 100px 100px 150px;
-        border: #1f1f1f;
-        border-width: 5px;
+    .top-text {
+      position: absolute;
+      bottom: 220px;
+      left: 15%;
+      right: 15%;
+      max-width: 650px;
 
-        h6 {
-          color: $compsa-yellow;
-          @include gotham-text(48px, 700, normal, 46px);
-          text-align: left;
-          letter-spacing: 0em;
+      @media (max-width: 600px) {
+        bottom: 100px;
+      }
 
-          .compsa {
-            @include gotham-text(48px, 700);
-          }
+      h6 {
+        color: $compsa-yellow;
+        @include gotham-text(48px, 700, normal, 46px);
+        text-align: left;
+        letter-spacing: 0em;
+
+        .compsa {
+          @include gotham-text(48px, 700);
         }
-        p {
-          margin-top: 40px;
-          @include gotham-text(24px);
-        }
+      }
+      p {
+        margin-top: 40px;
+        @include gotham-text(24px);
       }
     }
   }
 
   .bottom {
-    background: linear-gradient(180deg, #1f1f1f 0%, #5d15d2 100%), #1f1f1f;
+    background: linear-gradient(180deg, #1f1f1f 50%, #5d15d2 100%), #1f1f1f;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
     @include gotham-text(16);
-    border: solid black;
-    padding: 200px;
+    overflow: hidden;
+    padding: 40px;
 
-    .title-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .bottomSection {
+      max-width: 760px;
       width: 100%;
+      .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
 
-      h6 {
-        @include gotham-text(36px, 700);
-        margin: 0 20px; // Add horizontal space around the title
-      }
-
-      .title-line {
-        flex-grow: 1; // This makes the lines take up all remaining space
-        height: 1px;
-        background-color: $compsa-yellow;
-      }
-      margin-bottom: 50px;
-    }
-    .box-container {
-      width: 100%;
-      .box {
-        height: auto;
-        margin-bottom: 20px;
-        border-radius: 16px;
-        background: rgba(245, 245, 245, 0.9);
-        box-shadow: 5px 4px 16px 0px rgba(0, 0, 0, 0.25);
-        color: $compsa-black;
         h6 {
-          font-size: 24px;
+          @include gotham-text(36px, 700);
+          margin: 0 20px; // Add horizontal space around the title
+          @media (max-width: 600px) {
+            font-size: 25px;
+          }
         }
 
-        .box-image {
-          border-radius: 8px;
+        .title-line {
+          flex-grow: 1; // This makes the lines take up all remaining space
+          height: 1px;
+          background-color: $compsa-yellow;
         }
+        margin-bottom: 50px;
+      }
+      .box-container {
+        width: 100%;
 
-        .box-content {
-          width: 67%;
-          padding: 20px;
-          div {
-            margin: 10px 2px 10px 0px;
+        .box {
+          height: auto;
+          margin-bottom: 60px;
+          border-radius: 16px;
+          background: rgba(245, 245, 245, 0.9);
+          box-shadow: 5px 4px 16px 0px rgba(0, 0, 0, 0.25);
+          color: $compsa-black;
+          display: flex;
+          font-size: 20px;
+
+          h6 {
+            font-size: 30px;
           }
 
-          .title {
-            font-weight: 900;
+          .box-image {
+            position: relative;
+            background: url('../about/compsci.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            flex: 4;
+            overflow: hidden;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            @media (max-width: 600px) {
+              flex: 1;
+              padding-left: 20px;
+            }
           }
 
-          .btn {
-            border-radius: 8px;
-            background: $compsa-indigo;
-            padding: 12px 20px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            color: $compsa-white;
-            width: 60%;
+          .box-content {
+            flex: 6;
+            width: 67%;
+            padding: 20px;
+            padding-left: 80px;
+
+            @media (max-width: 600px) {
+              flex: 1;
+              padding-left: 20px;
+            }
+            div {
+              margin: 10px 2px 10px 0px;
+            }
+
+            .title {
+              font-weight: 900;
+            }
+
+            .btn {
+              border-radius: 8px;
+              background: $compsa-indigo;
+              padding: 12px 20px;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              color: $compsa-white;
+              width: 50%;
+              @media (max-width: 100px) {
+                width: 80%;
+              }
+              @media (max-width: 600px) {
+                width: 100%;
+              }
+            }
           }
         }
       }
