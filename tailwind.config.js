@@ -13,7 +13,17 @@ module.exports = {
         bold: ["var(--font-gotham-bold)"],
         book: ["var(--font-gotham-book)"],
       },
+      colors: {
+        compsa: {
+          yellow: "#d7de21",
+          white: "#f0f0f0",
+          black: "#1f1f1f",
+          indigo: "#5d15d2",
+          purple: "#c686f3",
+        },
+      },
     },
   },
+
   plugins: [],
 };

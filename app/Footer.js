@@ -33,7 +33,7 @@ export default function Footer() {
         icon="🔗"
       ></button>
       <h1>Land Acknowledgement</h1>
-      <p className="">
+      <p>
         Let us acknowledge that Queen’s is situated on traditional Anishinaabe
         (Ah-nish-in-ah-bay) and Haudenosaunee (Ho-den-o-show-nee) territory. We
         are grateful to be able to live, learn, and play on these lands.
