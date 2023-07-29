@@ -1,5 +1,5 @@
 // CSS RESET - DO NOT TOUCH
-// IMPORT FILES BELOw
+// IMPORT FILES BELOw THE RESET
 
 *:before,
 *:after {
@@ -108,8 +108,14 @@ input {
   border-radius: 0;
 }
 
+// IMPORT TAILWIND
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 // IMPORT FILES BELOW
 
+@import "styles/mixins";
 @import "styles/variables";
 @import "styles/about";
 @import "styles/admin";
@@ -121,10 +127,6 @@ input {
 @import "styles/resources";
 
 // GLOBAL STYLES - PLEASE PUT SCSS INSIDE THE RELEVANT FILE
-
-div {
-  // color: $compsa-purple;
-}
 
 body {
   height: calc(100vh - ($nav-height + $footer-height));

@@ -13,12 +13,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 For all styles, I have created a styles folder inside the app folder. You can find the file corresponding to each component there. <br/>
 If you look in /app/globals.scss, you can find that all of these files are imported. Now, because app/globals.scss is imported in app/page.js, the styles can be used by every other /(component)/page.js without importing the specific scss file. This also means that if you create a new scss file, you will have to write an import statement inside /app/globals.scss. (Do not import your file above /app/styles/variables.scss, your file may not have access to the variables if so). <br/>
 For all variables (colours, breakpoints, fonts) please reference them from /app/styles/variables.scss. Again, since all of the files were imported in app/globals.scss, you can use these variables on each scss file.<br/>
+Update - As of July 29, I have added tailwind in the project. While having 2 css libraries can be controversial, I believe this additional flexibility allows developers to choose between what they are comfortable with as well as take advantage of both libraries. <br/>
 Please look at the Navbar and Footer (both the styles/scss files and /app/Footer.js or Navbar.js) for examples of use. <br/>
 If this doesn't work as I described, please dm me and we can sort this out.
 
 ## Learn More
 
 - [Quick SCSS Video](https://www.youtube.com/watch?v=akDIJa0AP5c) - Quick scss video with all of its features.
+- [TailwindCSS Documentation](https://v2.tailwindcss.com/docs) - Learn about Tailwind CSS
 
 We are using Next 13 with the app router, so please look at relevant resources to learn. These are some given in the default readme
 

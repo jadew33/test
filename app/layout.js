@@ -1,9 +1,14 @@
 import "./globals.scss";
-import { Inter } from "next/font/google";
+
+import {
+  GothamLight,
+  GothamBook,
+  GothamBold,
+  GothamMedium,
+} from "./fonts/font";
+
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "COMPSA",
@@ -12,9 +17,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        {" "}
+    <html
+      lang="en"
+      className={`${GothamLight.variable} ${GothamMedium.variable} ${GothamBold.variable} ${GothamBook.variable} font-sans`}
+    >
+      {/* Given every text medium boldness by default 
+      - override with tailwind classes 'font-medium' or 'font-bold'.
+       As of July 29, there is no italics option, but the files 
+       are in app/fonts folder ready for import in font.js */}
+      <body className="font-light">
         <Navbar />
         {children}
         <Footer />
