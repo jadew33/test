@@ -22,12 +22,17 @@ $compsa-yellow: #d7de21;
     background-repeat: no-repeat;
     height: 100%;
 
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
     .top-text {
       position: absolute;
       bottom: 220px;
-      left: 15%;
-      right: 15%;
-      max-width: 650px;
+      max-width: 760px;
+      margin: 40px;
 
       @media (max-width: 600px) {
         bottom: 100px;
@@ -55,7 +60,7 @@ $compsa-yellow: #d7de21;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include gotham-text(16);
+    @include gotham-text(20px);
     overflow: hidden;
     padding: 40px;
 
@@ -73,7 +78,7 @@ $compsa-yellow: #d7de21;
           margin: 0 20px;
 
           @media (max-width: 600px) {
-            font-size: 25px;
+            @include gotham-text(25px, 700);
           }
         }
 
@@ -95,10 +100,12 @@ $compsa-yellow: #d7de21;
           box-shadow: 5px 4px 16px 0px rgba(0, 0, 0, 0.25);
           color: $compsa-black;
           display: flex;
-          font-size: 20px;
 
           h6 {
             font-size: 30px;
+            @media (max-width: 550px) {
+              font-size: 25px;
+            }
           }
 
           .box-image {
@@ -106,29 +113,38 @@ $compsa-yellow: #d7de21;
             background: url('../about/compsci.png');
             background-size: cover;
             background-repeat: no-repeat;
-            flex: 4;
             overflow: hidden;
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
+            border-top-left-radius: 16px;
+            border-bottom-left-radius: 16px;
+            height: auto;
 
-            @media (max-width: 600px) {
-              flex: 1;
-              padding-left: 20px;
+            width: 300px;
+            height: auto;
+
+            @media (max-width: 550px) {
+              width: 225px;
+              height: auto;
             }
           }
 
           .box-content {
-            flex: 6;
-            width: 67%;
+            width: auto;
             padding: 20px;
             padding-left: 80px;
 
-            @media (max-width: 600px) {
-              flex: 1;
+            @media (max-width: 650px) {
               padding-left: 20px;
             }
+            @media (max-width: 550px) {
+              padding-left: 10px;
+              @include gotham-text(16px);
+            }
+
             div {
               margin: 10px 2px 10px 0px;
+              @media (max-width: 550px) {
+                margin: 5px 2px 5px 0px;
+              }
             }
 
             .title {
@@ -144,10 +160,9 @@ $compsa-yellow: #d7de21;
               align-items: center;
               gap: 10px;
               color: $compsa-white;
-              width: 50%;
-
-              @media (max-width: 600px) {
-                width: 100%;
+              width: 100%;
+              @media (max-width: 550px) {
+                padding: 10px 10px;
               }
             }
           }
