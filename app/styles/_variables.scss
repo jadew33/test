@@ -6,20 +6,13 @@ $compsa-black: #1f1f1f;
 $compsa-white: #f0f0f0;
 $compsa-yellow: #d7de21;
 
-// Nav and footer heights for calculations on how big the content should be
-// May or may not end up using this in the future and will adjust for other resolutions later on
-// Don't worry about this for now - I will edit this when I come back
-$nav-height: 8vh;
-$footer-height: 8vh;
-$offset: calc($nav-height + $footer-height);
-
 // Breakpoints - would prefer to keep it to these variables when using media queries.
 // However, if it doesn't work with the content feel free to hard code a value
 // However, if there is too much that needs to be hardcoded, it is likely that there is a better
 // way to implement it.
 $xs: 320px; // even smaller mobile
-$s: 480px; // mobile
-$m: 768px; // ipads, tablets
+$sm: 480px; // mobile
+$md: 768px; // ipads, tablets
 $lg: 1024px; // small laptops
 $xl: 1200px; // laptops
 // I assume anything larger than that will be fine

@@ -1,2 +1,140 @@
+@import "./variables";
+
 .homepage {
+  min-height: 100vh;
+  .hero-image-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    .gradient {
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(
+          to top,
+          #1f1f1f 5%,
+          rgba(#5d15d2, 0.1) 20%,
+          transparent 50%
+        ),
+        url("/homepage-desktop.jpg");
+      background-size: cover;
+      object-fit: cover;
+      background-position: center;
+      position: absolute;
+      top: 50;
+      left: 0;
+    }
+
+    .text {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 37%;
+
+      text-align: center;
+
+      span {
+        color: transparent;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: #d7de21;
+      }
+
+      h1 {
+        font-size: 54px;
+      }
+      p {
+        font-size: 24px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .events-heading {
+    margin-top: 50px;
+    overflow: hidden;
+    font-size: 38px;
+    text-align: center;
+    &:before,
+    &:after {
+      background-color: $compsa-yellow;
+      content: "";
+      display: inline-block;
+      height: 2px;
+      bottom: 3px;
+      position: relative;
+      vertical-align: middle;
+      width: 15%;
+    }
+    &:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+    &:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+  }
+
+  .gradient-bg {
+    background: linear-gradient(to bottom, #1f1f1f 30%, #381c64);
+    p {
+      margin-top: 5px;
+      padding-inline: 20px;
+      font-size: 18px;
+    }
+  }
+
+  .events {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    height: 250px;
+    text-align: center;
+    padding: 11em 0 1em;
+    .events-button {
+      padding: 8px 18px;
+      // margin: 10em 0 3em;
+      // margin-top: ;
+
+      border: 1px solid $compsa-white;
+      background-color: transparent;
+      border-radius: 5px;
+    }
+  }
+
+  @media (max-width: $md) {
+    .hero-image-container .text {
+      h1 {
+        font-size: 42px;
+      }
+    }
+    .gradient-bg p {
+      font-size: 19px;
+      margin-top: 10px;
+    }
+    .events-heading {
+      font-size: 36px;
+      color: $compsa-yellow;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: $sm) {
+    .hero-image-container .text p {
+      font-size: 16px;
+      padding-inline: 15px;
+    }
+    .events-heading {
+      font-size: 30px;
+    }
+    .gradient-bg {
+      p {
+        margin-top: 5px;
+        // width: 300px;
+      }
+    }
+  }
 }

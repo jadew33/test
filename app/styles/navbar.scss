@@ -3,13 +3,20 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 1.5em 4em;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 5;
+
+  font-size: 17px;
+
+  padding-inline: 4em;
+  height: 70px;
 
   color: $compsa-white;
   background-color: $compsa-black;
 
   .normal-link {
-    letter-spacing: 0.5px;
     text-align: center;
     text-transform: uppercase;
 
@@ -20,13 +27,12 @@
     padding-bottom: 3px;
     margin-inline: 1em;
 
+    // Underline animation
     &:hover {
-      // font-weight: bold;
       &::after {
         transform: scale(1);
       }
     }
-
     &::after {
       content: "";
       position: absolute;
@@ -38,21 +44,81 @@
       transform: scale(0);
       transition: 0.2s all ease-in-out;
     }
-  }
-  .merch-link {
-    border: 1.5px solid $compsa-yellow;
-    border-radius: 10px;
-
-    color: $compsa-yellow;
-
-    padding: 0.75em 2em;
-    margin-left: 1em;
+    // Underline animation
   }
 
-  @media (max-width: $m) {
-    .merch-link,
+  .merch {
+    &_link {
+      border: 1.5px solid $compsa-yellow;
+      border-radius: 10px;
+
+      color: $compsa-yellow;
+
+      padding: 0.65em 1.5em;
+      margin-left: 1em;
+      position: relative;
+    }
+    &_logo {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  .mobile-links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-color: $compsa-black;
+
+    padding: 10px 20px;
+    width: 400px;
+
+    position: absolute;
+    top: 50px;
+    left: -90px;
+
+    z-index: 2;
+
+    // The jankiest way to put a shadow over the rest of the screen to ever exist
+    box-shadow: 0px 1004.5px 0px 1000px rgba(0, 0, 0, 0.85);
+
     .normal-link {
+      margin-block: 5px;
+    }
+  }
+  .mobile-nav {
+    display: none;
+  }
+  @media (max-width: $lg) {
+    padding-inline: 2em;
+    font-size: 16px;
+  }
+  @media (max-width: $md) {
+    .mobile-nav {
+      display: block;
+      position: relative;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .desktop-nav {
       display: none;
+    }
+
+    height: 60px;
+
+    .compsa-logo {
+      height: 35px;
+      width: 35px;
+    }
+    padding-inline: 2em;
+    .mobile-links-container {
+      box-shadow: 0px 1000px 0px 1000px rgba(0, 0, 0, 0.85);
     }
   }
 }

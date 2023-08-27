@@ -129,5 +129,9 @@ input {
 // GLOBAL STYLES - PLEASE PUT SCSS INSIDE THE RELEVANT FILE
 
 body {
-  height: calc(100vh - ($nav-height + $footer-height));
+  margin-top: 70px;
+  background-color: $compsa-black;
+  @media (max-width: $md) {
+    margin-top: 60px;
+  }
 }

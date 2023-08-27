@@ -10,7 +10,7 @@ module.exports = {
       fontFamily: {
         light: ["var(--font-gotham-light)"],
         medium: ["var(--font-gotham-medium)"],
-        bold: ["var(--font-gotham-bold)"],
+        gothamBold: ["var(--font-gotham-bold)"],
         book: ["var(--font-gotham-book)"],
       },
       colors: {

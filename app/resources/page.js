@@ -6,15 +6,16 @@ export default function Resources() {
   return (
     <div className="resources ">
       <div className="content">
-        <h1 className="font-bold">RESOURCES</h1>
+        <h1 className="font-gotham-bold">RESOURCES</h1>
         <p>
-          Below is a list of various resources maintained by COMPSA. You'll find
-          multiple sections with each being dedicated to a COMPSA portfolio.{" "}
+          Below is a list of various resources maintained by COMPSA. You&apos;ll
+          find multiple sections with each being dedicated to a COMPSA
+          portfolio.
         </p>
         <p>
           If you have something to contribute, or even just questions or
-          concerns about anything listed below, please don't hesitate to reach
-          out to help@compsa.queensu.ca!
+          concerns about anything listed below, please don&apos;t hesitate to
+          reach out to help@compsa.queensu.ca!
         </p>
         <Section title="COMPSA">
           <Link
