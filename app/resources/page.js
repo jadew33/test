@@ -1,4 +1,3 @@
-import "../styles/resources.scss";
 import Section from "./components/Section";
 import Link from "./components/Link";
 
@@ -6,7 +5,7 @@ export default function Resources() {
   return (
     <div className="resources ">
       <div className="content">
-        <h1 className="font-gotham-bold">RESOURCES</h1>
+        <h1 className="font-gothamBold">RESOURCES</h1>
         <p>
           Below is a list of various resources maintained by COMPSA. You&apos;ll
           find multiple sections with each being dedicated to a COMPSA
@@ -21,7 +20,7 @@ export default function Resources() {
           <Link
             link="https://www.instagram.com/compsa/"
             title="Instagram"
-            icon="🔗"
+            icon="/resources.svg"
           ></Link>
           <Link
             link="https://www.linkedin.com/company/queenscompsa/"

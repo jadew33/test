@@ -57,6 +57,12 @@
       padding: 0.65em 1.5em;
       margin-left: 1em;
       position: relative;
+
+      transition: all ease-in-out 250ms;
+
+      &:hover {
+        background-color: rgba($compsa-yellow, 0.05);
+      }
     }
     &_logo {
       display: inline-block;
