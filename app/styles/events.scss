@@ -1,2 +1,34 @@
-.events {
+.events-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(to bottom, #1f1f1f 30%, #381c64);
+  .container2 {
+    width: 50vw;
+    .calendar {
+      width: 50vw;
+      border-radius: 5px;
+      margin-bottom: 8em;
+    }
+
+    .events-text {
+      h1 {
+        font-size: 36px;
+        margin: 2.5em 0 1.5em;
+      }
+    }
+  }
+  @media (max-width: $md) {
+    .container2 {
+      width: 90vw;
+      .calendar {
+        width: 100%;
+      }
+      .events-text h1 {
+        margin: 2em 0 1em !important;
+      }
+    }
+  }
 }

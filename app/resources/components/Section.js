@@ -1,5 +1,3 @@
-import "../../styles/resources.scss";
-
 export default function Section({ title, children }) {
   if (!children) return null;
   return (

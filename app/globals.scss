@@ -114,9 +114,9 @@ input {
 @tailwind utilities;
 
 // IMPORT FILES BELOW
-
-@import "styles/mixins";
 @import "styles/variables";
+@import "styles/mixins";
+
 @import "styles/about";
 @import "styles/admin";
 @import "styles/contact";
@@ -129,5 +129,38 @@ input {
 // GLOBAL STYLES - PLEASE PUT SCSS INSIDE THE RELEVANT FILE
 
 body {
-  height: calc(100vh - ($nav-height + $footer-height));
+  margin-top: 70px;
+  background-color: $compsa-black;
+  @media (max-width: $md) {
+    margin-top: 60px;
+  }
+
+  .inline {
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #d7de21;
+  }
+  overflow-x: hidden;
+}
+
+// CUSTOM SCROLLBAR
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $compsa-black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $compsa-indigo;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $compsa-indigo;
 }
