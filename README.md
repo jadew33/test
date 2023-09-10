@@ -39,3 +39,6 @@ Used to do everything other than fonts and font colours.
 
 
 
+# Contact
+
+If you run into any issues, feel free to dm `www.jade` on discord
