@@ -1,4 +1,4 @@
-# Getting Started
+## Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -15,11 +15,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Note that I was not able to get commands like `next build` or `next start` working on my device. If you face the same issues, try running `npm run build` or `npm run start` instead (build required before trying to start). For development purposes, `npm run dev` is enough.
 
-# Styling Guidelines
+## Styling Guidelines
 
 There is both [TailwindCSS](https://tailwindcss.com/) and [SASS](https://sass-lang.com/) installed on this project. 
 
-## Tailwind CSS
+### Tailwind CSS
 
 While TailwindCSS provides a lot of utility classes off the bat, I personally find many sites using it to look "biggish" and have problems with spacing. Additionally, if there are a lot of classes applied to one element it can be really hard to read, especially in cases where there were 15+ applied.
 
@@ -29,7 +29,7 @@ You can take a look at the variables I have created for TailwindCSS inside  `tai
 
 In terms of the colours, in alignment with the 2023 COMPSA redesign, there are 5 standard colours. You can apply them like `text-compsa-yellow` or `bg-compsa-purple` depending on what you are trying to do.
 
-## SASS
+### SASS
 
 [Quick SASS Video](https://www.youtube.com/watch?v=akDIJa0AP5c) - Quick video explaining its features.
 
@@ -39,6 +39,6 @@ Used to do everything other than fonts and font colours.
 
 
 
-# Contact
+## Contact
 
 If you run into any issues, feel free to dm `www.jade` on discord
