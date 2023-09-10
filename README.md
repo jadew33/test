@@ -13,7 +13,7 @@ Then to start the development server, I usually run `npm run dev `
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Note that I was not able to get commands like `next start` or `next build` working on my device. If you face the same issues, try running `npm run build` or `npm run start` instead.
+Note that I was not able to get commands like `next build` or `next start` working on my device. If you face the same issues, try running `npm run build` or `npm run start` instead (build required before trying to start). For development purposes, `npm run dev` is enough.
 
 # Styling Guidelines
 
