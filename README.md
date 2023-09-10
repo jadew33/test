@@ -9,9 +9,7 @@ We are using Next 13 with the app router, so please look at relevant resources t
 
 When you clone this locally, make sure to `npm i` at the root folder (the one with /package-lock.json) to install all of the required dependencies.
 
-Then to start the development server, I usually run:
-
-`npm run dev `
+Then to start the development server, I usually run `npm run dev `
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
