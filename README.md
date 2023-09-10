@@ -13,6 +13,8 @@ Then to start the development server, I usually run `npm run dev `
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+Note that I was not able to get commands like `next start` or `next build` working on my device. If you face the same issues, try running `npm run build` or `npm run start` instead.
+
 # Styling Guidelines
 
 There is both [TailwindCSS](https://tailwindcss.com/) and [SASS](https://sass-lang.com/) installed on this project. 
