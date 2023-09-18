@@ -59,7 +59,7 @@
         justify-content: center;
 
         .box {
-          height: 240px;
+          height: 220px;
 
           margin-bottom: 50px;
 
@@ -69,20 +69,21 @@
 
           .box-image {
             background: url("/placeholder.png");
-            background-size: 300px 240px;
             background-repeat: no-repeat;
-            background-position: center;
+            background-size: contain;
 
             border-radius: 15px;
 
-            min-width: 300px;
+            width: 300px;
             height: 100%;
           }
 
           .box-content {
-            margin: 20px 0 20px 30px;
+            margin: 10px 0 10px 30px;
             display: flex;
             flex-direction: column;
+
+            width: 70%;
             h1 {
               font-size: 24px;
               font-weight: bold;
@@ -112,6 +113,8 @@
       left: 12vw;
     }
   }
+
+  // TEMPORARY CODE BELOW - Organize once real photos taken
 
   @media (max-width: $md) {
     .bottom .bottomSection {
@@ -148,22 +151,42 @@
       flex-direction: column;
     }
   }
-  @media (max-width: $sm) {
-    .bottom .bottomSection .box-container .box {
-      height: auto;
-      overflow: hidden;
+  @media (max-width: $md) {
+    .bottom .bottomSection .box-container {
+      display: flex;
       flex-direction: column;
-      .box-image {
-        height: 200px;
+      justify-content: center;
+      align-items: center;
 
-        background: url("/placeholder-mobile.jpg");
-        border-bottom-left-radius: 0;
-        background-position: 0% 80%;
-        background-size: cover;
+      .box {
+        height: auto;
+        overflow: hidden;
+        flex-direction: column;
+        width: 400px;
+        .box-image {
+          height: 200px;
+
+          // TEMPORARY code
+          display: none;
+
+          background: url("/placeholder-mobile.jpg");
+          border-bottom-left-radius: 0;
+          background-position: 0% 80%;
+          background-size: cover;
+        }
+
+        .box-content {
+          margin: 20px 30px 30px;
+        }
+      }
+      .title-line {
+        display: none;
       }
     }
-    .title-line {
-      display: none;
+  }
+  @media (max-width: $sm) {
+    .bottom .bottomSection .box-container .box {
+      width: 300px;
     }
   }
 }

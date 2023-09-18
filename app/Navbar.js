@@ -10,7 +10,10 @@ export default function Navbar() {
   return (
     <div className="navbar font-book">
       <Link href="/">
-        <div className="logo-container">
+        <div
+          className="logo-container"
+          onClick={() => setExpandedBurger(false)}
+        >
           <Image
             src="/logo.svg"
             width="40"

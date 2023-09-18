@@ -93,7 +93,9 @@ export default function About() {
                 <p>Hugh Tuckwell</p>
               </div>
             </div>
-            <div className="box">
+
+            {/* TEMPORARY - REVIEW LATER*/}
+            {/* <div className="box">
               <div className="box-image" />
               <div className="box-content">
                 <h1 className="font-book">Year Representatives</h1>
@@ -102,7 +104,7 @@ export default function About() {
                   Vandergrift
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="box">
               <div className="box-image" />
