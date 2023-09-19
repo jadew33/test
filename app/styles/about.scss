@@ -133,8 +133,8 @@
       background-position: 38% 90%;
 
       .top-text {
-        width: 90vw;
-        left: 5vw;
+        width: 85vw;
+        left: 8vw;
 
         bottom: 10vh;
         h1 {
@@ -187,6 +187,9 @@
   @media (max-width: $sm) {
     .bottom .bottomSection .box-container .box {
       width: 300px;
+    }
+
+    .top .top-text {
     }
   }
 }

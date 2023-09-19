@@ -4,8 +4,8 @@ import HomepageEventsCard from "./components/homepage-events-card";
 export default function Home() {
   const hardcode = [
     {
-      eventName: "Games Night",
-      eventDate: "12",
+      eventName: "Scavenger Hunt",
+      eventDate: "24",
       eventMonth: "September",
       eventDayofWeek: "Tuesday",
       ticketsRequired: false,
@@ -13,27 +13,12 @@ export default function Home() {
       eventLocation: "CASLAB",
       eventLocationLink:
         "https://www.google.com/maps?hl=en-GB&q=Goodwin+Hall+(Kingston)+CASLAB",
-      eventDescription:
-        "In Goodwin's CASLAB, students will get to enjoy a variety of board games such as jenga, monopoly, scrabble, etc. There will also be a Wii available to play on, containing fun games. There will also be plenty of free snacks, so bring your friends and enjoy!",
-      eventTime: "7pm - 9pm",
-    },
-    {
-      eventName: "Scavenger Hunt",
-      eventDate: "16",
-      eventDayofWeek: "Saturday",
-      eventMonth: "September",
-      ticketsRequired: false,
-      signupRequierd: true,
-      eventLocation: "CASLAB",
-      eventLocationLink:
-        "https://www.google.com/maps?hl=en-GB&q=Goodwin+Hall+(Kingston)+CASLAB",
-      eventDescription:
-        "In Goodwin's CASLAB, students will get to enjoy a variety of board games such as jenga, monopoly, scrabble, etc. There will also be a Wii available to play on, containing fun games. There will also be plenty of free snacks, so bring your friends and enjoy!",
-      eventTime: "7pm - 10pm",
+      eventDescription: "Team up and be the first to complete the Hunt!",
+      eventTime: "5pm - 8pm",
     },
     {
       eventName: "Movie Night",
-      eventDate: "22",
+      eventDate: "28",
       eventDayofWeek: "Friday",
       eventMonth: "September",
       ticketsRequired: false,
@@ -43,6 +28,19 @@ export default function Home() {
       eventDescription:
         "Students will gather in Sterling Hall to watch a movie! The movie will be voted for by the masses on COMPSA's Instagram. Snacks will be included! Bring your friends and get comfortable.",
       eventTime: "8pm - 10pm",
+    },
+    {
+      eventName: "Resume Workshop",
+      eventDate: "30",
+      eventDayofWeek: "Friday",
+      eventMonth: "September",
+      ticketsRequired: false,
+      signupRequierd: false,
+      eventLocation: "Mac Corry A309",
+      eventLocationLink: "https://maps.google.com/maps?hl=en&q=CASLAB",
+      eventDescription:
+        "Students will gather in Sterling Hall to watch a movie! The movie will be voted for by the masses on COMPSA's Instagram. Snacks will be included! Bring your friends and get comfortable.",
+      eventTime: "3pm - 5pm",
     },
   ];
   return (

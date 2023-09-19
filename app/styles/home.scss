@@ -109,7 +109,7 @@
           background-color: $compsa-white;
 
           padding-top: 20px;
-          padding-left: 30px;
+          padding-left: 22px;
 
           width: 230px;
           height: 230px;
@@ -123,7 +123,6 @@
           }
           .month {
             font-size: 20px;
-            margin-top: 0px;
           }
           .name {
             font-size: 20px;
@@ -143,76 +142,82 @@
         font-size: 42px;
       }
     }
-    .events-heading {
-      font-size: 36px;
-      color: $compsa-yellow;
-      &::before,
-      &::after {
-        display: none;
+
+    .gradient-bg {
+      .special-heading .events-heading {
+        font-size: 36px;
+        color: $compsa-yellow;
+        &::before,
+        &::after {
+          display: none;
+        }
       }
-    }
-    .homepage-cards-container {
-      flex-direction: column;
-
-      margin-block: 40px;
-      .homepage-events-card {
-        display: flex;
+      .homepage-events .homepage-cards-container {
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
 
-        max-height: 130px;
-        min-width: 380px;
+        margin: 30px 0 35px;
 
-        // IGNORE THE BAD CODE FOR NOW
-        margin: 20px 0 !important;
-        .mobile-divide {
-          text-align: right;
-          margin-top: 5px;
-        }
-        padding: 0px 40px 15px 40px !important;
+        .homepage-events-card {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: center;
 
-        .date {
-          font-size: 42px !important;
-          margin-bottom: -5px !important;
-        }
-        .name,
-        .location {
-          font-size: 16px;
+          max-height: 130px;
+          min-width: 380px;
+
+          margin-block: 20px;
+
+          .mobile-divide {
+            text-align: right;
+            margin-top: 5px;
+          }
+          padding: 0px 40px 15px 40px;
+
+          .date {
+            font-size: 36px;
+            margin-bottom: -2px;
+          }
+          .month,
+          .location {
+            font-size: 18px;
+          }
         }
       }
     }
   }
   @media (max-width: $sm) {
-    .hero-image-container .text p {
-      font-size: 16px;
-      padding-inline: 20px;
-    }
-    .events-description {
-      width: 80vw;
-      margin-top: 8px;
-    }
-    .homepage-cards-container {
-      .homepage-events-card {
-        min-width: 300px;
-        margin: 12px 0 !important;
-        padding: 0px 25px 15px 25px !important;
-        .date {
-          font-size: 32px !important;
-          margin-bottom: 1px !important;
+    .gradient-bg {
+      .events-heading {
+        font-size: 30px;
+      }
+      .homepage-events {
+        .events-description {
+          width: 80vw;
+          margin-top: 8px;
         }
-        .month {
-          font-size: 18px !important;
-        }
-        .name,
-        .location {
-          margin-top: 0px !important;
-          font-size: 18px !important;
+
+        .homepage-cards-container .homepage-events-card {
+          min-width: 320px;
+          margin: 14px 0;
+          padding: 0px 25px 15px 25px;
+
+          .date {
+            font-size: 32px;
+            margin-bottom: 1px;
+          }
+
+          .month {
+            font-size: 18px;
+          }
+
+          .name,
+          .location {
+            margin-top: 0px;
+            font-size: 18px;
+          }
         }
       }
-    }
-    .events-heading {
-      font-size: 30px;
     }
   }
 }
