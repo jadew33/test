@@ -133,7 +133,7 @@
       background-position: 38% 90%;
 
       .top-text {
-        width: 85vw;
+        width: 80vw;
         left: 8vw;
 
         bottom: 10vh;
@@ -160,9 +160,13 @@
 
       .box {
         height: auto;
+        width: 400px;
+
         overflow: hidden;
         flex-direction: column;
-        width: 400px;
+
+        margin-bottom: 40px;
+
         .box-image {
           height: 200px;
 
@@ -179,17 +183,26 @@
           margin: 20px 30px 30px;
         }
       }
-      .title-line {
-        display: none;
-      }
     }
   }
   @media (max-width: $sm) {
-    .bottom .bottomSection .box-container .box {
-      width: 300px;
-    }
+    .bottom .bottomSection {
+      .title-container {
+        .title-line {
+          display: none;
+        }
+        h1 {
+          color: $compsa-yellow;
+          font-size: 31px;
+          margin-inline: 0;
+        }
+        margin-bottom: 40px;
+      }
 
-    .top .top-text {
+      .box-container .box {
+        width: 300px;
+        margin-bottom: 30px;
+      }
     }
   }
 }

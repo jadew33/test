@@ -5,7 +5,7 @@ export default function About() {
         <div className="top-image" />
         <section className="top-text">
           <h1 className="text-compsa-yellow font-gothamBold">
-            WHAT IS <span className="inline">COMPSA</span> ?
+            WHAT IS <span className="inline">COMPSA</span>?
           </h1>
           <p className="font-book text-compsa-white">
             Queen&apos;s University Computing Students&apos; Association

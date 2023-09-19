@@ -53,7 +53,7 @@ export default function Resources() {
             icon="🔗"
           ></Link>
         </Section>
-        <Section title="EVENTS AND SOCIALS">
+        <Section title="EVENTS &#38; SOCIALS">
           <Link
             link="https://drive.google.com/drive/folders/1RLFSccTIccUVFDr1TDNmMRcNSvmpbKo0?usp=sharing"
             title="Fall Night Out Photos"
