@@ -12,7 +12,7 @@ import Footer from "./Footer";
 
 export const metadata = {
   title: "COMPSA",
-  description: "Queen's Computing Students Associations",
+  description: "Queen's Computing Students Association",
 };
 
 export default function RootLayout({ children }) {
