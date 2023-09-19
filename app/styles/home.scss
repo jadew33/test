@@ -191,6 +191,12 @@
     }
   }
   @media (max-width: $sm) {
+    .hero-image-container .text {
+      top: 36%;
+      p {
+        margin-top: 10px;
+      }
+    }
     .gradient-bg {
       .events-heading {
         font-size: 30px;
@@ -204,21 +210,25 @@
         .homepage-cards-container .homepage-events-card {
           min-width: 320px;
           margin: 14px 0;
-          padding: 0px 25px 15px 25px;
+          padding: 0px 25px 10px 25px;
+
+          height: 110px;
 
           .date {
             font-size: 32px;
-            margin-bottom: 1px;
           }
 
           .month {
             font-size: 18px;
           }
 
-          .name,
-          .location {
+          .name {
             margin-top: 0px;
             font-size: 18px;
+          }
+
+          .location {
+            font-size: 16px;
           }
         }
       }
