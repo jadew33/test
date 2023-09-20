@@ -3,25 +3,24 @@
   background: linear-gradient(0deg, #381c64 0%, #1f1f1f 100%);
   h1 {
     color: $compsa-yellow;
-    font-size: 3em;
+    font-size: 42px;
     font-weight: 900;
-    margin: 2rem 0 2rem;
+    margin: 20px 0 10px;
   }
   p {
     color: $compsa-white;
-    font-size: 1.1em;
     max-width: 80%;
+    font-size: 18px;
     margin-block: 1em;
   }
-  @media (max-width: $xl) {
-    font-size: 1rem;
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
+  @media (max-width: $sm) {
     p {
       font-size: 16px;
       max-width: 90%;
+    }
+
+    h1 {
+      font-size: 36px;
     }
   }
 }
@@ -51,7 +50,7 @@
   color: $compsa-white;
   margin-top: 3.5rem;
   .title {
-    font-size: 2.1em;
+    font-size: 32px;
     font-weight: 600;
     text-align: left;
     display: flex;

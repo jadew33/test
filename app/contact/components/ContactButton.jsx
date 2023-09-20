@@ -30,7 +30,11 @@ export default function ContactButton() {
   };
 
   return (
-    <button className="submit" type="button" onClick={handleClick}>
+    <button
+      className="submit text-compsa-white"
+      type="button"
+      onClick={handleClick}
+    >
       Submit Message
     </button>
   );

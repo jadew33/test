@@ -7,12 +7,12 @@ export default function About() {
           <h1 className="text-compsa-yellow font-gothamBold">
             WHAT IS <span className="inline">COMPSA</span>?
           </h1>
-          <p className="font-book text-compsa-white">
+          <p className=" text-compsa-white">
             Queen&apos;s University Computing Students&apos; Association
             (COMPSA) is the student government for Queen&apos;s University
             School of Computing.
           </p>
-          <p className="font-book text-compsa-white">
+          <p className=" text-compsa-white">
             We organize social events, workshops, information sessions, and work
             together with the faculty to advocate for Computing students&apos;
             needs.

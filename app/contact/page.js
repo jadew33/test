@@ -4,9 +4,9 @@ import ContactButton from "./components/ContactButton";
 export default function Contact() {
   return (
     <div className="contact">
-      <h1 className="font-gothamBold">CONTACT US!</h1>
+      <h1 className="font-gothamBold text-compsa-yellow">CONTACT US!</h1>
       <div className="contact-grid">
-        <p className="text-content">
+        <p className="text-content text-compsa-white">
           Leave us a message with concerns or feedback.
           <br />
           <br /> Note, if you would like us to get back to you personally,
@@ -40,7 +40,9 @@ export default function Contact() {
           ></iframe>
         </div>
       </div>
-      <h3 className="font-gothamBold">LOOKING FOR A SPECIFIC PORTFOLIO?</h3>
+      <h3 className="font-gothamBold text-compsa-white">
+        LOOKING FOR A SPECIFIC PORTFOLIO?
+      </h3>
       <div className="portfolio-grid font-book">
         <Portfolio
           className="academics"

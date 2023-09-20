@@ -14,7 +14,7 @@ export default function Resources() {
         <p>
           If you have something to contribute, or even just questions or
           concerns about anything listed below, please don&apos;t hesitate to
-          reach out to help@compsa.queensu.ca!
+          reach out to help@compsa.queensu.ca
         </p>
         <Section title="COMPSA">
           <Link
