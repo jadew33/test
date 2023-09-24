@@ -4,43 +4,22 @@ import HomepageEventsCard from "./components/homepage-events-card";
 export default function Home() {
   const hardcode = [
     {
-      eventName: "Scavenger Hunt",
-      eventDate: "24",
-      eventMonth: "September",
-      eventDayofWeek: "Tuesday",
-      ticketsRequired: false,
-      signupRequierd: true,
-      eventLocation: "CASLAB",
-      eventLocationLink:
-        "https://www.google.com/maps?hl=en-GB&q=Goodwin+Hall+(Kingston)+CASLAB",
-      eventDescription: "Team up and be the first to complete the Hunt!",
-      eventTime: "5pm - 8pm",
-    },
-    {
       eventName: "Movie Night",
       eventDate: "28",
-      eventDayofWeek: "Friday",
       eventMonth: "September",
-      ticketsRequired: false,
-      signupRequierd: false,
       eventLocation: "Stirling Hall",
-      eventLocationLink: "https://maps.google.com/maps?hl=en&q=CASLAB",
-      eventDescription:
-        "Students will gather in Sterling Hall to watch a movie! The movie will be voted for by the masses on COMPSA's Instagram. Snacks will be included! Bring your friends and get comfortable.",
-      eventTime: "8pm - 10pm",
     },
     {
       eventName: "Resume Workshop",
       eventDate: "30",
-      eventDayofWeek: "Friday",
       eventMonth: "September",
-      ticketsRequired: false,
-      signupRequierd: false,
       eventLocation: "Mac Corry A309",
-      eventLocationLink: "https://maps.google.com/maps?hl=en&q=CASLAB",
-      eventDescription:
-        "Students will gather in Sterling Hall to watch a movie! The movie will be voted for by the masses on COMPSA's Instagram. Snacks will be included! Bring your friends and get comfortable.",
-      eventTime: "3pm - 5pm",
+    },
+    {
+      eventName: "Games Night",
+      eventDate: "3",
+      eventMonth: "October",
+      eventLocation: "CASLAB",
     },
   ];
   return (
