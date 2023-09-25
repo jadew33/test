@@ -70,7 +70,11 @@ export default function Hiring() {
         </Section>
 
         <Section title="EVENTS">
-          <Listing title="Events Intern" number={2} />
+          <Listing
+            title="Events Intern"
+            number={2}
+            description="The COMPSA Events Team is looking for two passionate interns who will mostly be helping out planning out the annual formals."
+          />
         </Section>
 
         <Section title="SOCIALS">
