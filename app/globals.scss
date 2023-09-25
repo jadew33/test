@@ -54,12 +54,11 @@ body {
 
 @media (max-width: $sm) {
   .page-heading {
+    font-size: 36px;
+  }
+  .page-description {
     font-size: 16px;
     max-width: 90%;
-  }
-
-  .page-description {
-    font-size: 36px;
   }
 }
 

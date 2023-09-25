@@ -33,12 +33,16 @@
       margin: 0.5em;
       .job-description {
         width: 95%;
+        @media (max-width: $sm) {
+          width: 90%;
+        }
       }
       h1 {
         font-size: 1.1rem;
       }
     }
   }
+
   .job-number {
     width: 30px;
     position: absolute;
