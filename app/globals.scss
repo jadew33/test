@@ -1,112 +1,6 @@
 // CSS RESET - DO NOT TOUCH
-// IMPORT FILES BELOw THE RESET
-
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-object,
-iframe,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-code,
-em,
-img,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-b,
-u,
-i,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-main,
-canvas,
-embed,
-footer,
-header,
-nav,
-section,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
-}
-
-footer,
-header,
-nav,
-section,
-main {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-input {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
+// IMPORT IS BELOW
+@import "styles/reset";
 
 // IMPORT TAILWIND
 @tailwind base;
@@ -125,6 +19,7 @@ input {
 @import "styles/footer";
 @import "styles/navbar";
 @import "styles/resources";
+@import "styles/hiring";
 
 // GLOBAL STYLES - PLEASE PUT SCSS INSIDE THE RELEVANT FILE
 
@@ -141,6 +36,31 @@ body {
     -webkit-text-stroke-color: #d7de21;
   }
   overflow-x: hidden;
+}
+
+.page-heading {
+  color: $compsa-yellow;
+  font-size: 42px;
+  font-weight: 900;
+  margin: 20px 0 10px;
+}
+
+.page-description {
+  color: $compsa-white;
+  max-width: 80%;
+  font-size: 18px;
+  margin-block: 1em;
+}
+
+@media (max-width: $sm) {
+  .page-heading {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .page-description {
+    font-size: 36px;
+  }
 }
 
 // CUSTOM SCROLLBAR

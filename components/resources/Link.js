@@ -1,5 +1,5 @@
 import Image from "next/image";
-export default function Link({ title, date, link, icon }) {
+export default function Link({ title, date, link }) {
   return (
     <li>
       <a href={link} className="link-button">

@@ -1,11 +1,6 @@
 import "./globals.scss";
 
-import {
-  GothamLight,
-  GothamBook,
-  GothamBold,
-  GothamMedium,
-} from "./fonts/font";
+import { GothamLight, GothamBook, GothamBold, GothamMedium } from "/fonts/font";
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";

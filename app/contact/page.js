@@ -1,5 +1,5 @@
-import Portfolio from "./components/Portfolio";
-import ContactButton from "./components/ContactButton";
+import Portfolio from "/components/contact/Portfolio";
+import ContactButton from "/components/contact/ContactButton";
 
 export default function Contact() {
   return (

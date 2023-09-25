@@ -47,7 +47,6 @@
 }
 
 .section {
-  color: $compsa-white;
   margin-top: 3.5rem;
   .title {
     font-size: 32px;
@@ -55,6 +54,7 @@
     text-align: left;
     display: flex;
     align-items: center;
+    color: white;
     hr {
       flex-grow: 1;
       margin-left: 1.5rem;

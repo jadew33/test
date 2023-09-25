@@ -1,0 +1,48 @@
+.hiring {
+  background: linear-gradient(0deg, #381c64 0%, #1f1f1f 100%);
+  .listing {
+    display: flex;
+    align-items: center;
+
+    background-color: $compsa-white;
+    border-radius: 0.5rem;
+
+    padding: 0.4rem 1rem;
+    margin-block: 1.25rem;
+
+    position: relative;
+
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+
+    &:hover {
+      background-color: $compsa-purple;
+      color: $compsa-white;
+    }
+
+    &:active {
+      transform: scale(
+        0.95
+      ); /* Scale down the button to 95% of its original size */
+      background-color: darken($compsa-purple, 10%);
+    }
+    .text-div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0.5em;
+      .job-description {
+        width: 95%;
+      }
+      h1 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .job-number {
+    width: 30px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}

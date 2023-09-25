@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HomepageEventsCard from "./components/homepage-events-card";
+import HomepageEventsCard from "/components/home/homepage-events-card";
 
 export default function Home() {
   const hardcode = [
