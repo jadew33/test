@@ -24,7 +24,7 @@
 
     position: relative;
 
-    padding-top: 8px;
+    padding-bottom: 3px;
     margin-inline: 1em;
 
     // Underline animation
@@ -54,12 +54,9 @@
 
       color: $compsa-yellow;
 
-      padding: 25px 25px 15px;
-
+      padding: 0.65em 1.5em;
       margin-left: 1em;
       position: relative;
-
-      height: 100px;
 
       transition: all ease-in-out 250ms;
 
