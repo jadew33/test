@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import HomepageEventsCard from "/components/home/homepage-events-card";
 
 export default function Home() {
@@ -24,6 +25,25 @@ export default function Home() {
   ];
   return (
     <div className="homepage">
+      {/* PRELOADING?? TEMPORARY  */}
+      <Image
+        className="article-page__banner"
+        src="/homepage-desktop.jpg"
+        alt={""}
+        width={1000}
+        height={500}
+        priority
+        style={{ display: "none" }}
+      />
+      <Image
+        className="article-page__banner"
+        src="/homepage-mobile.jpg"
+        alt={""}
+        width={1000}
+        height={500}
+        priority
+        style={{ display: "none" }}
+      />
       <div className="hero-image-container">
         <div className="gradient"></div>
         <div className="text text-compsa-yellow">
