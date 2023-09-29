@@ -72,12 +72,17 @@ export default function About() {
                   <b className="font-book">Director:</b>Nina Thaksee
                 </p>
                 <b className="font-book">Volunteers:</b>
-                <div className="">
-                  <p>Shuran Cui</p>
-                  <p>Julia Knott</p>
-                  <p>Vanshita Uthra</p>
-                  <p>Jordan Capello</p>
-                  <p>Nathan Cai</p>
+                <div className="volunteers-overflow">
+                  <div className="first">
+                    <p>Shuran Cui</p>
+                    <p>Julia Knott</p>
+                    <p>Vanshita Uthra</p>
+                  </div>
+
+                  <div>
+                    <p>Jordan Capello</p>
+                    <p>Nathan Cai</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -143,10 +148,10 @@ export default function About() {
               <div className="box-content">
                 <h1 className="font-book">Equity</h1>
                 <p>
-                  <b className="font-book">Director:</b>Aminah Rizwan
+                  <b className="font-book">Director:</b>Sebastian Medrea
                 </p>
-                <b className="font-book">Volunteers:</b>
-                <p>Sebastian Medrea</p>
+                {/* <b className="font-book">Volunteers:</b> */}
+                {/* TEMPORARY */}
               </div>
             </div>
             <div className="box">
@@ -169,12 +174,16 @@ export default function About() {
                   <b className="font-book">Director:</b>Anishka Barran
                 </p>
                 <b className="font-book">Volunteers:</b>
-                <div className="">
-                  <p>Sophia Pagazani</p>
-                  <p>Amanda Misek</p>
-                  <p>Jasmine Zangeneh</p>
-                  <p>Ethan Nguyen</p>
-                  <p>Arthur Hu</p>
+                <div className="volunteers-overflow">
+                  <div className="first">
+                    <p>Sophia Pagazani</p>
+                    <p>Amanda Misek</p>
+                    <p>Jasmine Zangeneh</p>
+                  </div>
+                  <div>
+                    <p>Ethan Nguyen</p>
+                    <p>Arthur Hu</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -189,7 +198,7 @@ export default function About() {
                 </p>
                 <b className="font-book">Volunteers:</b>
                 <div className="volunteers-overflow">
-                  <div>
+                  <div className="first">
                     <p>Daniel Dousek</p>
                     <p>Kaleigh Feder</p>
                     <p>Sari Pagurek van Mossel</p>

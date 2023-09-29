@@ -1,19 +1,19 @@
 import localFont from "next/font/local";
 
 const GothamLight = localFont({
-  src: "./GothamLight.ttf",
+  src: "./Gotham-Light.ttf",
   variable: "--font-gotham-light",
 });
 const GothamBook = localFont({
-  src: "./GothamBook.ttf",
+  src: "./Gotham-Book.ttf",
   variable: "--font-gotham-book",
 });
 const GothamMedium = localFont({
-  src: "./GothamMedium.ttf",
+  src: "./Gotham-Medium.ttf",
   variable: "--font-gotham-medium",
 });
 const GothamBold = localFont({
-  src: "./GothamBold.ttf",
+  src: "./Gotham-Bold.ttf",
   variable: "--font-gotham-bold",
 });
 

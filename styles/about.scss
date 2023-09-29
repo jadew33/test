@@ -72,33 +72,34 @@
             background-repeat: no-repeat;
             background-size: contain;
 
-            border-radius: 15px;
+            border-radius: 13px;
 
             width: 300px;
             height: 100%;
           }
 
           .box-content {
-            margin: 10px 0 10px 30px;
             display: flex;
             flex-direction: column;
+            // justify-content: center; TEMPORARY - Not sure if i like centered or not better
 
-            width: 70%;
             h1 {
               font-size: 24px;
               font-weight: bold;
               text-transform: uppercase;
+
+              margin-top: 16px;
             }
 
             b {
               font-weight: bold;
-              margin-right: 5px;
+              margin: 1px 5px 1px 0;
             }
 
             .volunteers-overflow {
               display: flex;
-              > * {
-                margin-right: 35px;
+              .first {
+                width: 250px;
               }
             }
           }
@@ -115,17 +116,25 @@
   }
 
   // TEMPORARY CODE BELOW - Organize once real photos taken
+  // One md is for photos one is for this placeholder, but theyre' combined atm
 
   @media (max-width: $md) {
     .bottom .bottomSection {
       .title-container h1 {
         margin-inline: 10px;
       }
-      .box-container .box .box-image {
-        background-size: cover;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        min-width: 200px;
+      .box-container .box {
+        .box-image {
+          background-size: cover;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          min-width: 200px;
+        }
+        .box-content {
+          h1 {
+            margin-top: 0;
+          }
+        }
       }
     }
 
@@ -185,6 +194,7 @@
       }
     }
   }
+
   @media (max-width: $sm) {
     .bottom .bottomSection {
       .title-container {
@@ -202,6 +212,9 @@
       .box-container .box {
         width: 300px;
         margin-bottom: 30px;
+        .box-content b {
+          display: block;
+        }
       }
     }
   }
