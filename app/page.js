@@ -33,6 +33,7 @@ export default function Home() {
         width={1000}
         height={500}
         priority
+        loading="eager"
         style={{ display: "none" }}
       />
       <Image
@@ -42,6 +43,7 @@ export default function Home() {
         width={1000}
         height={500}
         priority
+        loading="eager"
         style={{ display: "none" }}
       />
       <div className="hero-image-container">
