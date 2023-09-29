@@ -25,27 +25,6 @@ export default function Home() {
   ];
   return (
     <div className="homepage">
-      {/* PRELOADING?? TEMPORARY  */}
-      <Image
-        className="article-page__banner"
-        src="/homepage-desktop.jpg"
-        alt={""}
-        width={1000}
-        height={500}
-        priority
-        loading="eager"
-        style={{ display: "none" }}
-      />
-      <Image
-        className="article-page__banner"
-        src="/homepage-mobile.jpg"
-        alt={""}
-        width={1000}
-        height={500}
-        priority
-        loading="eager"
-        style={{ display: "none" }}
-      />
       <div className="hero-image-container">
         <div className="gradient"></div>
         <div className="text text-compsa-yellow">
