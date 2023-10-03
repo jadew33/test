@@ -5,20 +5,20 @@ import HomepageEventsCard from "/components/home/homepage-events-card";
 export default function Home() {
   const hardcode = [
     {
-      eventName: "Movie Night",
-      eventDate: "28",
-      eventMonth: "September",
-      eventLocation: "Stirling Hall",
+      eventName: "Manhunt",
+      eventDate: "17",
+      eventMonth: "October",
+      eventLocation: "CASLAB",
     },
     {
-      eventName: "Resume Workshop",
-      eventDate: "30",
-      eventMonth: "September",
-      eventLocation: "Mac Corry A309",
+      eventName: "Murder Mystery",
+      eventDate: "24",
+      eventMonth: "October",
+      eventLocation: "CASLAB",
     },
     {
-      eventName: "Games Night",
-      eventDate: "3",
+      eventName: "Dog Therapy",
+      eventDate: "31",
       eventMonth: "October",
       eventLocation: "CASLAB",
     },
