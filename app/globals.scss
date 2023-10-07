@@ -52,6 +52,25 @@ body {
   margin-block: 1em;
 }
 
+.compsa-button {
+  padding: 7px 30px;
+  margin-block: 10px;
+
+  display: inline-block;
+
+  border: 1.5px solid $compsa-white;
+  border-radius: 5px;
+
+  background-color: transparent;
+  transition: all ease-in-out 350ms;
+
+  color: $compsa-white;
+
+  &:hover {
+    background-color: rgba($compsa-purple, 0.2);
+  }
+}
+
 @media (max-width: $sm) {
   .page-heading {
     font-size: 36px;

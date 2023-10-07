@@ -1,10 +1,20 @@
 .hiring {
   background: linear-gradient(0deg, #381c64 0%, #1f1f1f 100%);
+
+  .page-description {
+    p {
+      margin-block: 8px;
+    }
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .listing {
     display: flex;
     align-items: center;
 
-    background-color: $compsa-white;
     border-radius: 0.5rem;
 
     padding: 0.4rem 1rem;
@@ -12,19 +22,19 @@
 
     position: relative;
 
+    background-color: $compsa-white;
+
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
 
     &:hover {
-      background-color: $compsa-purple;
-      color: $compsa-white;
+      background-color: rgba($compsa-white, 0.9);
     }
 
-    &:active {
-      transform: scale(
-        0.95
-      ); /* Scale down the button to 95% of its original size */
-      background-color: darken($compsa-purple, 10%);
+    li {
+      margin-left: 15px;
+      list-style-type: circle;
     }
+
     .text-div {
       width: 100%;
       display: flex;

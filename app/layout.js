@@ -1,5 +1,4 @@
 import "./globals.scss";
-import Head from "next/head";
 
 import { GothamLight, GothamBook, GothamBold, GothamMedium } from "/fonts/font";
 
@@ -17,7 +16,6 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${GothamLight.variable} ${GothamMedium.variable} ${GothamBold.variable} ${GothamBook.variable} font-sans`}
     >
-      <Head></Head>
       <body className="font-light">
         <Navbar />
         {children}

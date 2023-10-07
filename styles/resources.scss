@@ -47,24 +47,29 @@
 }
 
 .section {
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   .title {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 30px;
     text-align: left;
     display: flex;
     align-items: center;
     color: white;
     hr {
       flex-grow: 1;
-      margin-left: 1.5rem;
+      margin-left: 1rem;
     }
   }
-  @media (max-width: $sm) {
+  @media (max-width: $md) {
     .title {
       font-size: 26px;
     }
     margin-top: 50px;
+  }
+  @media (max-width: $sm) {
+    .title {
+      font-size: 20px;
+    }
+    margin-top: 40px;
   }
 }
 
