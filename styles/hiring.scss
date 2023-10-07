@@ -7,6 +7,23 @@
     }
   }
 
+  .content {
+    padding: 4% 20% 7%;
+
+    @media (max-width: $xl) {
+      padding-inline: 15%;
+    }
+    @media (max-width: $lg) {
+      padding-inline: 10%;
+    }
+    @media (max-width: $md) {
+      padding-inline: 6%;
+    }
+    @media (max-width: $sm) {
+      padding-inline: 5%;
+    }
+  }
+
   .button {
     display: flex;
     align-items: center;

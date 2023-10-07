@@ -23,22 +23,22 @@
       font-size: 36px;
     }
   }
-}
 
-.content {
-  padding: 4% 20% 7%;
+  .content {
+    padding: 4% 30% 7%;
 
-  @media (max-width: $xl) {
-    padding-inline: 15%;
-  }
-  @media (max-width: $lg) {
-    padding-inline: 10%;
-  }
-  @media (max-width: $md) {
-    padding-inline: 6%;
-  }
-  @media (max-width: $sm) {
-    padding-inline: 5%;
+    @media (max-width: $xl) {
+      padding-inline: 25%;
+    }
+    @media (max-width: $lg) {
+      padding-inline: 20%;
+    }
+    @media (max-width: $md) {
+      padding-inline: 15%;
+    }
+    @media (max-width: $sm) {
+      padding-inline: 10%;
+    }
   }
 }
 
