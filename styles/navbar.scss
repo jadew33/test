@@ -10,7 +10,7 @@
 
   font-size: 17px;
 
-  padding-inline: 4em;
+  padding-inline: 50px;
   height: 70px;
 
   color: $compsa-white;
@@ -25,7 +25,7 @@
     position: relative;
 
     padding-bottom: 3px;
-    margin-inline: 1em;
+    margin-inline: 18px;
 
     // Underline animation
     &:hover {
@@ -97,11 +97,21 @@
   .mobile-nav {
     display: none;
   }
-  @media (max-width: $lg) {
-    padding-inline: 2em;
-    font-size: 16px;
+  @media (max-width: $xl) {
+    padding-inline: 50px;
+    .normal-link {
+      margin-inline: 16px;
+    }
   }
-  @media (max-width: $md) {
+
+  @media (max-width: $lg) {
+    padding-inline: 20px;
+    font-size: 16px;
+    .normal-link {
+      margin-inline: 12px;
+    }
+  }
+  @media (max-width: 835px) {
     .mobile-nav {
       display: block;
       position: relative;
@@ -122,6 +132,5 @@
       height: 35px;
       width: 35px;
     }
-    // padding-right: 2em;
   }
 }

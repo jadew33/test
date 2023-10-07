@@ -62,8 +62,8 @@ export default function Hiring() {
                     timeline for the given task
                   </li>
                   <li>
-                    Provide unique feedback from a your year's point of view to
-                    improve COMPSA
+                    Provide unique feedback from a your year&apos;s point of
+                    view to improve COMPSA
                   </li>
                 </ol>
               </div>

@@ -78,7 +78,6 @@
   align-items: center;
 
   background-color: $compsa-white;
-  color: $compsa-black;
 
   border-radius: 0.5rem;
 
@@ -88,8 +87,7 @@
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
 
   &:hover {
-    background-color: $compsa-purple;
-    color: $compsa-white;
+    background-color: rgba($compsa-purple, 1);
   }
 
   &:active {
@@ -99,13 +97,11 @@
     background-color: darken($compsa-purple, 10%);
   }
   .text-div {
-    color: $compsa-black;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     p {
-      color: $compsa-black;
       margin: 0.5em;
       font-size: 1em;
       text-align: right;
@@ -114,26 +110,18 @@
       margin: 0.5em;
       font-size: 1.1rem;
       flex: 1;
-      color: $compsa-black;
     }
   }
   .icon-div {
     font-size: 1.5em;
     padding: 0.4em;
-    color: $compsa-indigo;
     @media (max-width: $xl) {
       padding: 0.35em 0.5em;
     }
     @media (max-width: $lg) {
       padding: 0.3em 0.5em;
     }
-    @media (max-width: $md) {
-      padding: 0.3em 0.5em;
-    }
     @media (max-width: $sm) {
-      padding: 0.25em 0.5em;
-    }
-    @media (max-width: $xs) {
       padding: 0.25em 0.5em;
     }
   }

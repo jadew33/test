@@ -6,7 +6,7 @@ export default function Link({ title, description, number, bullets }) {
           <h1 className="font-bold">{title}</h1>
           <p className="job-description">{description}</p>
           <ul className="job-description">
-            {bullets && bullets.map((p) => <li>{p}</li>)}
+            {bullets && bullets.map((p, i) => <li key={i}>{p}</li>)}
           </ul>
         </div>
       </div>
