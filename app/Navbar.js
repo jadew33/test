@@ -35,11 +35,7 @@ export default function Navbar() {
           <Link href="/resources" className="normal-link">
             Resources
           </Link>
-          <Link
-            href="/hiring"
-            className="normal-link"
-            onClick={() => setExpandedBurger(false)}
-          >
+          <Link href="/hiring" className="normal-link">
             Fall Hiring
           </Link>
           <Link href="/contact" className="normal-link">
