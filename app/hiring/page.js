@@ -46,7 +46,7 @@ export default function Hiring() {
                   years to come. Priority will be given to first year students,
                   but any year can apply.
                 </p>
-                <br />
+
                 <p>
                   As an intern, you will be working with one member of the
                   Executive &#40;President, Vice President of Operations, Vice
