@@ -38,7 +38,7 @@ export default function Hiring() {
             <div className="text-div">
               <div className="left">
                 <h1 className="font-bold">Exec Intern</h1>
-                <p className="job-description">
+                <p className="job-description special">
                   The intern position is for students who are interested in
                   learning about how the Council and Internal Structure of
                   COMPSA works. This is a great opportunity to get directly
@@ -226,6 +226,7 @@ export default function Hiring() {
               "Ensure accessibility and equitable practices in COMPSA events, socials, and processes.",
               "Responsible for overseeing Equity Fundraising events.",
             ]}
+            equity="(The Equity Affairs Coordinator role will be hired for multiple people. This is simply an enumeration of the responsibilities of the entire role; individual responsibilities will be delegated to the volunteers of this role during on-boarding.)"
           />
           <Listing
             title="Equity Intern"

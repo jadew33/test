@@ -1,4 +1,4 @@
-export default function Link({ title, description, number, bullets }) {
+export default function Link({ title, description, number, bullets, equity }) {
   return (
     <div className="listing">
       <div className="text-div">
@@ -6,6 +6,7 @@ export default function Link({ title, description, number, bullets }) {
           <h1 className="font-bold">{title}</h1>
           <p className="job-description">{description}</p>
           <ul className="job-description">
+            <p className="special">{equity}</p>
             {bullets && bullets.map((p, i) => <li key={i}>{p}</li>)}
           </ul>
         </div>
