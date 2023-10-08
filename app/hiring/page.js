@@ -18,6 +18,11 @@ export default function Hiring() {
             week &#40;October 21-27&#41;. Remember to check your spam mail
             folder.
           </p>
+          <CompsaButton
+            link="https://docs.google.com/document/d/1RyRd7zCydDwxzQyeW0wGKBUgiYU8RhlayLgOIigMdcI/edit?usp=sharing"
+            text="Hiring Package"
+            className="button"
+          />
           <p>
             Please complete the application form no later than{" "}
             <span className="font-book font-bold">
@@ -26,7 +31,7 @@ export default function Hiring() {
           </p>
           <CompsaButton
             link="https://forms.gle/GecnHJfhZEHprCNz9"
-            text="Application Form"
+            text="Apply Here"
             className="button"
           />
           <p>The position descriptions are outlined below:</p>
@@ -72,6 +77,61 @@ export default function Hiring() {
           </div>
         </Section>
 
+        <Section title="ACADEMICS">
+          <Listing
+            title="Academics Volunteer"
+            number={2}
+            description="Works with the Academics team in order to facilitate the tutorizing program, exam tutorials, and other Academics initiatives throughout the school year.  Also helps to facilitate communication between the student body and the faculty."
+          />
+        </Section>
+
+        <Section title="EQUITY">
+          <Listing
+            title="Equity Affairs Coordinator"
+            number={3}
+            bullets={[
+              "Communicate with other equity-related groups on campus and in the Kingston community",
+              "Find and let students know about non-COMPSA equity, diversity, support, and mental health events happening in the community",
+              "Act as one of the main bullet of contact for speakers/organizations/groups during events concerning equity/accessibility concerns.",
+              "Create and oversee post-event/social surveys to let Computing students voice their suggestions, concerns and comments.",
+              "Review equity surveys and propose solutions for raised points from students.",
+              "Run monthly EDI+I caucuses to promote conversations about equity issues.",
+              "Present the results of equity surveys at General Assemblies and proposed solutions.",
+              "Manage and oversee an equity feedback form (together with Director) in order to give students an anonymous forum to voice concerns/suggestions/issues/incidents in Computing regarding Equity.",
+              "Ideate and realize mental health awareness events throughout the academic year with collaboration with the Socials and/or Academics portfolios. (i.e. exam destressors)",
+              "Ensure accessibility and equitable practices in COMPSA events, socials, and processes.",
+              "Responsible for overseeing Equity Fundraising events.",
+            ]}
+            equity="(The Equity Affairs Coordinator role will be hired for multiple people. This is simply an enumeration of the responsibilities of the entire role; individual responsibilities will be delegated to the volunteers of this role during on-boarding.)"
+          />
+          <Listing
+            title="Equity Intern"
+            number={1}
+            bullets={[
+              "Take part in event promotion as a spirit minister, sharing event details and promoting socials of mental health awareness events through word of mouth to the computing faculty",
+              "Work with the equity team through event brainstorming, relay expectations and sentiments from the computing community that can be used in future surveys or as a means to collect valuable data",
+              "Give feedback on the event creation process and which mental health destresser events are most pertinent to computing students",
+              "Represent the needs and wants of computing students from their corresponding year",
+            ]}
+          />
+        </Section>
+
+        <Section title="EVENTS">
+          <Listing
+            title="Events Intern"
+            number={2}
+            description="Works with the Events team to help plan, coordinate, and execute a wide range of events, designed to engage and educate computing students. Interns will have the opportunity to gain valuable hands-on experience in event management and contribute to the vibrant computing student community. "
+          />
+        </Section>
+
+        <Section title="FINANCE">
+          <Listing
+            title="Finance Intern"
+            number={1}
+            description="Working closely with finance and sponsorships to keep track of the budget of the year and send out emails to potential sponsors. Attend weekly meetings and get to know more about the finance portfolio. Be the main point of contact for fundraising, come up with ideas and work closely with marketing for it"
+          />
+        </Section>
+
         <Section title="INTERNAL AFFAIRS">
           <Listing
             title="Policy Officer"
@@ -82,45 +142,6 @@ export default function Hiring() {
             title="Scribe"
             number={1}
             description="Documents important information & context by Participating in council meetings, general assemblies, and any other important meetings) by taking meeting minutes. Additionally helps with maintaining documentation."
-          />
-        </Section>
-
-        <Section title="ACADEMICS">
-          <Listing
-            title="Academics Volunteer"
-            number={2}
-            description="Works with the Academics team in order to facilitate the tutorizing program, exam tutorials, and other Academics initiatives throughout the school year.  Also helps to facilitate communication between the student body and the faculty."
-          />
-        </Section>
-
-        <Section title="PROFESSIONAL DEVELOPMENT">
-          <Listing
-            title="Company Outreach Coordinator"
-            number={1}
-            bullets={[
-              "Contact various companies via email, LinkedIn or through company representatives to create meaningful connections and establish a line of communication for future events.",
-              "Attend networking events on behalf of COMPSA to meet those company representatives.",
-              "Coordinate activities with companies.",
-            ]}
-          />
-          <Listing
-            title="Internship Coordinator"
-            number={1}
-            bullets={[
-              "Utilize various platforms and events to gather internship opportunities.",
-              "Coordinate with the tech team to ensure that the internships are regularly updated on the websites.",
-              "Ensure that the COMPSA LinkedIn is up-to-date with active internship opportunities.",
-            ]}
-          />
-          <Listing
-            title="Professional Development Intern"
-            number={1}
-            bullets={[
-              "Work closely with the PD Director to understand the internal workings of COMPSA.",
-              "Act as the PD Director's line of communication to other portfolios, such as Finance and Marketing.",
-              "Assist with the planning and execution of PD events, such as office tours, events and networking mixers.",
-              "Get to meet professionals in the industry!",
-            ]}
           />
         </Section>
 
@@ -161,6 +182,46 @@ export default function Hiring() {
           />
         </Section>
 
+        <Section title="PROFESSIONAL DEVELOPMENT">
+          <Listing
+            title="Company Outreach Coordinator"
+            number={1}
+            bullets={[
+              "Contact various companies via email, LinkedIn or through company representatives to create meaningful connections and establish a line of communication for future events.",
+              "Attend networking events on behalf of COMPSA to meet those company representatives.",
+              "Coordinate activities with companies.",
+            ]}
+          />
+          <Listing
+            title="Internship Coordinator"
+            number={1}
+            bullets={[
+              "Utilize various platforms and events to gather internship opportunities.",
+              "Coordinate with the tech team to ensure that the internships are regularly updated on the websites.",
+              "Ensure that the COMPSA LinkedIn is up-to-date with active internship opportunities.",
+            ]}
+          />
+          <Listing
+            title="Professional Development Intern"
+            number={1}
+            bullets={[
+              "Work closely with the PD Director to understand the internal workings of COMPSA.",
+              "Act as the PD Director's line of communication to other portfolios, such as Finance and Marketing.",
+              "Assist with the planning and execution of PD events, such as office tours, events and networking mixers.",
+              "Get to meet professionals in the industry!",
+            ]}
+          />
+        </Section>
+
+        <Section title="SOCIALS">
+          <Listing
+            title="Socials Intern"
+            number={2}
+            description="Woks with the Socials team to plan and coordinate the many social events throughout the year. Interns will learn about event brainstorming, planning skills (event forms, graphic requests, room bookings, snack acquisitions, etc.), and being part of a team. By the end of the school year, both interns will get to formulate and run their own events!!
+"
+          />
+        </Section>
+
         <Section title="TECH TEAM">
           <Listing
             title="Web Design Intern"
@@ -184,65 +245,10 @@ export default function Hiring() {
           />
         </Section>
 
-        <Section title="EVENTS">
-          <Listing
-            title="Events Intern"
-            number={2}
-            description="Works with the Events team to help plan, coordinate, and execute a wide range of events, designed to engage and educate computing students. Interns will have the opportunity to gain valuable hands-on experience in event management and contribute to the vibrant computing student community. "
-          />
-        </Section>
-
-        <Section title="SOCIALS">
-          <Listing
-            title="Socials Intern"
-            number={2}
-            description="Woks with the Socials team to plan and coordinate the many social events throughout the year. Interns will learn about event brainstorming, planning skills (event forms, graphic requests, room bookings, snack acquisitions, etc.), and being part of a team. By the end of the school year, both interns will get to formulate and run their own events!!
-"
-          />
-        </Section>
-
-        <Section title="FINANCE">
-          <Listing
-            title="Finance Intern"
-            number={1}
-            description="Working closely with finance and sponsorships to keep track of the budget of the year and send out emails to potential sponsors. Attend weekly meetings and get to know more about the finance portfolio. Be the main point of contact for fundraising, come up with ideas and work closely with marketing for it"
-          />
-        </Section>
-
-        <Section title="EQUITY">
-          <Listing
-            title="Equity Affairs Coordinator"
-            number={3}
-            bullets={[
-              "Communicate with other equity-related groups on campus and in the Kingston community",
-              "Find and let students know about non-COMPSA equity, diversity, support, and mental health events happening in the community",
-              "Act as one of the main bullet of contact for speakers/organizations/groups during events concerning equity/accessibility concerns.",
-              "Create and oversee post-event/social surveys to let Computing students voice their suggestions, concerns and comments.",
-              "Review equity surveys and propose solutions for raised points from students.",
-              "Run monthly EDI+I caucuses to promote conversations about equity issues.",
-              "Present the results of equity surveys at General Assemblies and proposed solutions.",
-              "Manage and oversee an equity feedback form (together with Director) in order to give students an anonymous forum to voice concerns/suggestions/issues/incidents in Computing regarding Equity.",
-              "Ideate and realize mental health awareness events throughout the academic year with collaboration with the Socials and/or Academics portfolios. (i.e. exam destressors)",
-              "Ensure accessibility and equitable practices in COMPSA events, socials, and processes.",
-              "Responsible for overseeing Equity Fundraising events.",
-            ]}
-            equity="(The Equity Affairs Coordinator role will be hired for multiple people. This is simply an enumeration of the responsibilities of the entire role; individual responsibilities will be delegated to the volunteers of this role during on-boarding.)"
-          />
-          <Listing
-            title="Equity Intern"
-            number={1}
-            bullets={[
-              "Take part in event promotion as a spirit minister, sharing event details and promoting socials of mental health awareness events through word of mouth to the computing faculty",
-              "Work with the equity team through event brainstorming, relay expectations and sentiments from the computing community that can be used in future surveys or as a means to collect valuable data",
-              "Give feedback on the event creation process and which mental health destresser events are most pertinent to computing students",
-              "Represent the needs and wants of computing students from their corresponding year",
-            ]}
-          />
-        </Section>
         <div className="button">
           <CompsaButton
             link="https://forms.gle/GecnHJfhZEHprCNz9"
-            text="Application Form"
+            text="Apply Here"
             className="button"
           />
         </div>
