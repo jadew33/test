@@ -12,7 +12,6 @@ export default function Hiring() {
             Thank you for your interest in becoming a COMPSA volunteer for the
             2023-2024 Academic Year. You can apply to up to 3 positions.
           </p>
-          <p>Intern roles are indended for first year students.</p>
           <p>
             Interview times will be circulated to applicants at least 24 hours
             before your interview, and interviews will take place the following
@@ -35,7 +34,10 @@ export default function Hiring() {
             text="Apply Here"
             className="button"
           />
-          <p>The position descriptions are outlined below:</p>
+          <p>
+            The position descriptions listed below. Intern roles are intended
+            for first year students.
+          </p>
         </div>
 
         <Section title="EXECUTIVES">
