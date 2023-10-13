@@ -20,7 +20,7 @@ export default function Hiring() {
           </p>
           <CompsaButton
             link="https://docs.google.com/document/d/1RyRd7zCydDwxzQyeW0wGKBUgiYU8RhlayLgOIigMdcI/edit?usp=sharing"
-            text="Hiring Package"
+            text="Information Package"
             className="button"
           />
           <p>
