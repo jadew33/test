@@ -12,6 +12,7 @@ export default function Hiring() {
             Thank you for your interest in becoming a COMPSA volunteer for the
             2023-2024 Academic Year. You can apply to up to 3 positions.
           </p>
+          <p>Intern roles are indended for first year students.</p>
           <p>
             Interview times will be circulated to applicants at least 24 hours
             before your interview, and interviews will take place the following
@@ -224,22 +225,22 @@ export default function Hiring() {
 
         <Section title="TECH TEAM">
           <Listing
-            title="Web Design Intern"
+            title="Web Design Volunteer"
             number={1}
             description="Designs stunning web pages using Figma for the tech team to implement. We are looking for an individual who has past design experience. Works closely with the Frontend Director and receives feedback on their designs from the Marketing Director."
           />
           <Listing
-            title="Frontend Development Intern"
+            title="Frontend Development Volunteer"
             number={1}
             description="Works with the tech team to translate the provided designs into clean and efficient frontend code. We are looking for an individual who has past experience using web development technologies. Works closely with the Frontend Director. "
           />
           <Listing
-            title="Fullstack Development Intern"
+            title="Fullstack Development Volunteer"
             number={1}
             description="Works closely with both the Frontend and Backend directors to build and maintain various projects assigned to the Tech Team. We are looking for an individual who has past experience developing full stack applications."
           />
           <Listing
-            title="Backend Development Intern"
+            title="Backend Development Volunteer"
             number={1}
             description="Works closely with the head of DevOps to build and maintain information technology systems to accomplish COMPSA's mandate. We are looking for an individual who is very familiar with Node.js and MySQL. Experience with PHP and Docker is a plus but not required."
           />
