@@ -81,7 +81,6 @@ export default function About() {
 
                   <div>
                     <p>Jordan Capello</p>
-                    <p>Nathan Cai</p>
                   </div>
                 </div>
               </div>
@@ -91,11 +90,10 @@ export default function About() {
               <div className="box-content">
                 <h1 className="font-book">Internal Affairs</h1>
                 <p>
-                  <b className="font-book">Director:</b>Cain Susko
+                  <b className="font-book">Director:</b>High Tuckwell
                 </p>
                 <b className="font-book">Volunteers:</b>
                 <p>Mercy Doan</p>
-                <p>Hugh Tuckwell</p>
               </div>
             </div>
 
