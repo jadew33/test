@@ -36,7 +36,7 @@ export default function Navbar() {
             Resources
           </Link>
           <Link href="/hiring" className="normal-link">
-            Fall Hiring
+            Hiring
           </Link>
           <Link href="/contact" className="normal-link">
             Contact
@@ -93,7 +93,7 @@ export default function Navbar() {
               className="normal-link"
               onClick={() => setExpandedBurger(false)}
             >
-              Fall Hiring
+              Hiring
             </Link>
             <Link
               href="/contact"
