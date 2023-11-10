@@ -57,10 +57,10 @@ export default function About() {
                 </p>
                 <b className="font-book">Volunteers:</b>
                 <div className="">
-                  <p>Mason Mazzocco</p>
-                  <p>Nicole Hernandez</p>
                   <p>Khyle Sewpersaud</p>
                   <p>Kevin Yao</p>
+                  <p>Mason Mazzocco</p>
+                  <p>Nicole Hernandez</p>
                 </div>
               </div>
             </div>
@@ -77,11 +77,9 @@ export default function About() {
                     <p>Shuran Cui</p>
                     <p>Julia Knott</p>
                     <p>Vanshita Uthra</p>
-                  </div>
-
-                  <div>
                     <p>Jordan Capello</p>
                   </div>
+                  <div></div>
                 </div>
               </div>
             </div>
@@ -93,6 +91,7 @@ export default function About() {
                   <b className="font-book">Director:</b>High Tuckwell
                 </p>
                 <b className="font-book">Volunteers:</b>
+                <p>Cain Susko</p>
                 <p>Mercy Doan</p>
               </div>
             </div>
