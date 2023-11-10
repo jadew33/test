@@ -16,10 +16,10 @@ export default function Home() {
       eventLocation: "CASLAB",
     },
     {
-      eventName: "Clark Pub Hall Trivia",
+      eventName: "Trivia Night",
       eventDate: "13",
       eventMonth: "January",
-      eventLocation: "CASLAB",
+      eventLocation: "Clark Pub Hall",
     },
   ];
   return (
