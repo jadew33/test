@@ -42,7 +42,11 @@ export default function Navbar() {
             Contact
           </Link>
 
-          <Link href="https://merch.compsa.ca/en/" className="merch_link">
+          <Link
+            href="https://merch.compsa.ca/en/"
+            target="_blank"
+            className="merch_link"
+          >
             <Image
               src="/cart.svg"
               className="merch_logo"
@@ -104,6 +108,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="https://merch.compsa.ca/en/"
+              target="_blank"
               className="normal-link"
               onClick={() => setExpandedBurger(false)}
             >

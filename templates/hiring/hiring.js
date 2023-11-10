@@ -40,45 +40,7 @@ export default function Hiring() {
           </p>
         </div>
 
-        <Section title="EXECUTIVES">
-          {/* SPECIAL LISTING */}
-          <div className="listing">
-            <div className="text-div">
-              <div className="left">
-                <h1 className="font-bold">Exec Intern</h1>
-                <p className="job-description special">
-                  The intern position is for students who are interested in
-                  learning about how the Council and Internal Structure of
-                  COMPSA works. This is a great opportunity to get directly
-                  involved in university-level leadership and create change for
-                  years to come. Priority will be given to first year students,
-                  but any year can apply.
-                </p>
-
-                <p>
-                  As an intern, you will be working with one member of the
-                  Executive &#40;President, Vice President of Operations, Vice
-                  President of Student Affairs&#41; and are expected to:
-                </p>
-                <ol>
-                  <li>
-                    Attend all COMPSA General Assemblies and Council meetings
-                    when requested to Meet fortnightly with their Executive
-                  </li>
-                  <li>
-                    Complete tasks assigned to them in accordance with the
-                    timeline for the given task
-                  </li>
-                  <li>
-                    Provide unique feedback from a your year&apos;s point of
-                    view to improve COMPSA
-                  </li>
-                </ol>
-              </div>
-            </div>
-            <p className="font-bold job-number">x 6</p>
-          </div>
-        </Section>
+        <Section title="EXECUTIVES"></Section>
 
         <Section title="ACADEMICS">
           <Listing
