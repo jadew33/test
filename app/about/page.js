@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <seciton className="aboutSection">
@@ -30,7 +32,14 @@ export default function About() {
 
           <section className="box-container">
             <div className="box">
-              <div className="box-image" />
+              <div className="place-container">
+                <Image
+                  src="/placeholder.png"
+                  width={260}
+                  height={0}
+                  className="placeholder"
+                />
+              </div>
               <div className="box-content">
                 <h1 className="font-book">Executives</h1>
                 <p>
@@ -61,7 +70,14 @@ export default function About() {
               </div>
             </div>
             <div className="box">
-              <div className="box-image" />
+              <div className="place-container">
+                <Image
+                  src="/placeholder.png"
+                  width={260}
+                  height={0}
+                  className="placeholder"
+                />
+              </div>
               <div className="box-content">
                 <h1 className="font-book">Academics</h1>
                 <p>
@@ -82,7 +98,14 @@ export default function About() {
               </div>
             </div>
             <div className="box">
-              <div className="box-image" />
+              <div className="place-container">
+                <Image
+                  src="/placeholder.png"
+                  width={260}
+                  height={0}
+                  className="placeholder"
+                />
+              </div>
               <div className="box-content">
                 <h1 className="font-book">Professional Development</h1>
                 <p>
@@ -107,7 +130,14 @@ export default function About() {
               </div>
             </div>
             <div className="box">
-              <div className="box-image" />
+              <div className="place-container">
+                <Image
+                  src="/placeholder.png"
+                  width={260}
+                  height={0}
+                  className="placeholder"
+                />
+              </div>
               <div className="box-content">
                 <h1 className="font-book">Internal Affairs</h1>
                 <p>
@@ -135,7 +165,14 @@ export default function About() {
             </div> */}
 
             <div className="box">
-              <div className="box-image" />
+              <div className="place-container">
+                <Image
+                  src="/placeholder.png"
+                  width={260}
+                  height={0}
+                  className="placeholder"
+                />
+              </div>
               <div className="box-content">
                 <h1 className="font-book">Events</h1>
                 <p>
@@ -156,7 +193,14 @@ export default function About() {
               </div>
             </div>
             <div className="box">
-              <div className="box-image" />
+              <div className="place-container">
+                <Image
+                  src="/placeholder.png"
+                  width={260}
+                  height={0}
+                  className="placeholder"
+                />
+              </div>
               <div className="box-content">
                 <h1 className="font-book">Socials</h1>
                 <p>
@@ -177,7 +221,14 @@ export default function About() {
               </div>
             </div>
             <div className="box">
-              <div className="box-image" />
+              <div className="place-container">
+                <Image
+                  src="/placeholder.png"
+                  width={260}
+                  height={0}
+                  className="placeholder"
+                />
+              </div>
               <div className="box-content">
                 <h1 className="font-book">Equity</h1>
                 <p>
@@ -189,7 +240,14 @@ export default function About() {
               </div>
             </div>
             <div className="box">
-              <div className="box-image" />
+              <div className="place-container">
+                <Image
+                  src="/placeholder.png"
+                  width={260}
+                  height={0}
+                  className="placeholder"
+                />
+              </div>
               <div className="box-content">
                 <h1 className="font-book">Finances</h1>
                 <p>
@@ -203,7 +261,14 @@ export default function About() {
               </div>
             </div>
             <div className="box">
-              <div className="box-image" />
+              <div className="place-container">
+                <Image
+                  src="/placeholder.png"
+                  width={260}
+                  height={0}
+                  className="placeholder"
+                />
+              </div>
               <div className="box-content">
                 <h1 className="font-book">Marketing</h1>
                 <p>
@@ -230,7 +295,14 @@ export default function About() {
               </div>
             </div>
             <div className="box">
-              <div className="box-image" />
+              <div className="place-container">
+                <Image
+                  src="/placeholder.png"
+                  width={260}
+                  height={0}
+                  className="placeholder"
+                />
+              </div>
               <div className="box-content">
                 <h1 className="font-book">Tech Team</h1>
 
