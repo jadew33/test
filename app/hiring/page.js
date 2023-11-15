@@ -38,7 +38,6 @@ export default function Hiring() {
             text="Apply Here"
             className="button"
           />
-          <p>The position descriptions listed below.</p>
         </div>
 
         <Section title="First Year Representative">
