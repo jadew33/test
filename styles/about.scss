@@ -176,16 +176,9 @@
 
         margin-bottom: 40px;
 
-        .box-image {
-          height: 200px;
-
+        .place-container {
           // TEMPORARY code
           display: none;
-
-          background: url("/placeholder-mobile.jpg");
-          border-bottom-left-radius: 0;
-          background-position: 0% 80%;
-          background-size: cover;
         }
 
         .box-content {
