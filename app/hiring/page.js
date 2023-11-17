@@ -62,14 +62,56 @@ export default function Hiring() {
         </Section>
         <Section title="Timeline">
           <div className="calender-container">
-            <Image
-              src="/calender.png"
-              height={0}
-              width={0}
-              alt="Calender"
-              sizes="100vw"
-              className="calender"
-            />
+            <p class="event">
+              <b className="font-book text-xl">Sunday, Nov 12, 2023:</b>
+              <br />
+              Nomination period begins and nomination form is available on
+              social media sites and through email
+            </p>
+
+            <p class="event">
+              <b className="font-book text-xl">Wednesday, Nov 15, 2023:</b>
+              <br />
+              Information meeting to run for year rep (3pm Goodwin Hall COMPSA
+              Office, 241 Goodwin)
+            </p>
+
+            <p class="event">
+              <b className="font-book text-xl">Friday, Nov 17, 2023:</b>
+              <br />
+              Nomination period ends at 11:30pm.
+            </p>
+
+            <p class="event">
+              <b className="font-book text-xl">Friday, Nov 17, 2023:</b>
+              <br />
+              All campaigning materials need to be approved before 11:30pm
+            </p>
+
+            <p class="event">
+              <b className="font-book text-xl">Saturday, Nov 18, 2023:</b>
+              <br />
+              Campaigning period begins at 12:00am
+            </p>
+
+            <p class="event">
+              <b className="font-book text-xl">Monday, Nov 20, 2023:</b>
+              <br />
+              Candidate Q&A Session (5pm to 6pm Walter Light Hall)
+            </p>
+
+            <p class="event">
+              <b className="font-book text-xl">Friday, Nov 24, 2023:</b>
+              <br />
+              Campaigning period ends at 8:00pm.
+            </p>
+
+            <p class="event">
+              <b className="font-book text-xl">Saturday, Nov 25:</b>
+              <br />
+              Voting period are open online from 12:00am EST until 11:59pm EST
+              Sunday, Nov 26, 2023.
+            </p>
           </div>
         </Section>
       </div>
