@@ -35,7 +35,7 @@ export default function Hiring() {
           <br />
           <CompsaButton
             link="https://forms.gle/CErJob2ujje3qgpJ7"
-            text="Apply Here"
+            text="Nomination Form"
             className="button"
           />
         </div>
