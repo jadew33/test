@@ -1,5 +1,7 @@
 import Section from "/components/Section";
+import Listing from "/components/hiring/Listing";
 import CompsaButton from "/components/Button";
+import Image from "next/image";
 
 export default function Hiring() {
   return (
@@ -14,22 +16,16 @@ export default function Hiring() {
             Fall in the 2023 Election for the 2023-2024 Academic Year.
           </p>
           <p>
-            Complete the nomination form no later than
+            Complete the nomination form no later than{" "}
             <span className="font-book font-bold">
-              {" "}
-              11:30 P.M on Friday, November 17, 2023{" "}
-            </span>
-            In addition to the form, you must send a certain number of digital
-            signatures &#40;name and student number&#41; from students in
-            computing who support you to{" "}
-            <span className="font-book font-bold">
-              internal@compsa.queensu.ca
+              11:30 P.M on Friday, November 17, 2023
             </span>{" "}
-            before the deadline of
+            . In addition to the form, you must send a certain number of digital
+            signatures (name and student number) from students in computing who
+            support you to internal@compsa.queensu.ca before the deadline of{" "}
             <span className="font-book font-bold">
-              {" "}
-              Friday, November 17, 2023{" "}
-            </span>
+              Friday, November 17, 2023
+            </span>{" "}
           </p>
           <CompsaButton
             link="https://docs.google.com/document/d/1xifQDVBEAZVH7CoIW3DWCMtbXrTS4WhbK6JfrlOFZPA/edit?usp=sharing"
@@ -39,10 +35,9 @@ export default function Hiring() {
           <br />
           <CompsaButton
             link="https://forms.gle/CErJob2ujje3qgpJ7"
-            text="Nomination Form"
+            text="Apply Here"
             className="button"
           />
-          <p>The position description is listed below.</p>
         </div>
 
         <Section title="First Year Representative">
@@ -51,7 +46,7 @@ export default function Hiring() {
             <div className="text-div">
               <div className="left">
                 <h1 className="font-bold">First Year Representative</h1>
-                <p className="job-description">
+                <p className="job-description special">
                   Utilizing effective communication with peers, first year
                   representatives organize year-specific events, address
                   year-related issues, shadow assigned portfolios, manage
@@ -62,6 +57,19 @@ export default function Hiring() {
                 </p>
               </div>
             </div>
+            <p className="font-bold job-number"></p>
+          </div>
+        </Section>
+        <Section title="Timeline">
+          <div className="calender-container">
+            <Image
+              src="/calender.png"
+              height={0}
+              width={0}
+              alt="Calender"
+              sizes="100vw"
+              className="calender"
+            />
           </div>
         </Section>
       </div>
