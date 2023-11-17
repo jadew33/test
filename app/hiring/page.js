@@ -16,23 +16,23 @@ export default function Hiring() {
             Fall in the 2023 Election for the 2023-2024 Academic Year.
           </p>
           <p>
-            Complete the nomination form no later than 11:30 P.M on Friday,
-            November 17, 2023. In addition to the form, you must send a certain
-            number of digital signatures (name and student number) from students
-            in computing who support you to internal@compsa.queensu.ca before
-            the deadline of &#40;Friday, November 17, 2023&#41;
+            Complete the nomination form no later than{" "}
+            <span className="font-book font-bold">
+              11:30 P.M on Friday, November 17, 2023
+            </span>{" "}
+            . In addition to the form, you must send a certain number of digital
+            signatures (name and student number) from students in computing who
+            support you to internal@compsa.queensu.ca before the deadline of{" "}
+            <span className="font-book font-bold">
+              Friday, November 17, 2023
+            </span>{" "}
           </p>
           <CompsaButton
             link="https://docs.google.com/document/d/1xifQDVBEAZVH7CoIW3DWCMtbXrTS4WhbK6JfrlOFZPA/edit?usp=sharing"
             text="Information Package"
             className="button"
           />
-          <p>
-            Complete the nomination form no later than{" "}
-            <span className="font-book font-bold">
-              11:30 P.M on Friday, November 17, 2023.
-            </span>
-          </p>
+          <br />
           <CompsaButton
             link="https://forms.gle/CErJob2ujje3qgpJ7"
             text="Apply Here"
