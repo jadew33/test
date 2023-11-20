@@ -39,20 +39,16 @@ export default function Resources() {
             title="TikTok"
           ></Link>
           <Link link="mailto:president@compsa.queensu.ca" title="Email"></Link>
-          <Link
+          {/* <Link
             link="https://forms.gle/uBgzvkWuzMeoezwD6"
             title="Join the Alumni Network"
-          ></Link>
+          ></Link> */}
         </Section>
         <Section title="EVENTS &#38; SOCIALS">
           <Link
             link="https://drive.google.com/drive/folders/1SGaqPNshNR3KbdC2YfJ9c0JdmwPcPGdJ"
             title="Fall Night Out 2023 Photos"
           ></Link>
-          {/* <Link
-            link="https://drive.google.com/drive/u/0/folders/17PjrE_w09Fe2_ehvzgiRbMsO1QL231WO"
-            title="Formal Photos"
-          ></Link> */}
         </Section>
         <Section title="EQUITY">
           <Link
@@ -60,13 +56,8 @@ export default function Resources() {
             title="Sexual Assault Centre Kingston"
           ></Link>
         </Section>
-        <Section title="ACADEMICS">
-          <Link
-            link="https://docs.google.com/forms/d/e/1FAIpQLSebseoqRym3KOZsQHE9zYtjzcZL0otMDcflmPuoxSku6gsTyA/viewform"
-            title="Tutor Request Form"
-          ></Link>
-        </Section>
-        <Section title="PROFESSIONAL DEVELOPMENT"></Section>
+        {/* <Section title="ACADEMICS"></Section>
+        <Section title="PROFESSIONAL DEVELOPMENT"></Section> */}
       </div>
     </div>
   );
