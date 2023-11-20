@@ -107,7 +107,9 @@ export default function Hiring() {
             </p>
 
             <p class="event">
-              <b className="font-book text-xl">Saturday, Nov 25:</b>
+              <b className="font-book text-xl">
+                Saturday, Nov 25 - Sunday, Nov 26:
+              </b>
               <br />
               Voting period are open online from 12:00am EST until 11:59pm EST
               Sunday, Nov 26, 2023.
