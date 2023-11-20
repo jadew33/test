@@ -88,7 +88,7 @@ export default function About() {
               <div className="box-content">
                 <h1 className="font-book">Internal Affairs</h1>
                 <p>
-                  <b className="font-book">Director:</b>High Tuckwell
+                  <b className="font-book">Director:</b>Hugh Tuckwell
                 </p>
                 <b className="font-book">Volunteers:</b>
                 <p>Cain Susko</p>
