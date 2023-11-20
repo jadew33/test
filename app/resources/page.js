@@ -46,13 +46,13 @@ export default function Resources() {
         </Section>
         <Section title="EVENTS &#38; SOCIALS">
           <Link
-            link="https://drive.google.com/drive/folders/1RLFSccTIccUVFDr1TDNmMRcNSvmpbKo0?usp=sharing"
-            title="Fall Night Out Photos"
+            link="https://drive.google.com/drive/folders/1SGaqPNshNR3KbdC2YfJ9c0JdmwPcPGdJ"
+            title="Fall Night Out 2023 Photos"
           ></Link>
-          <Link
+          {/* <Link
             link="https://drive.google.com/drive/u/0/folders/17PjrE_w09Fe2_ehvzgiRbMsO1QL231WO"
             title="Formal Photos"
-          ></Link>
+          ></Link> */}
         </Section>
         <Section title="EQUITY">
           <Link
