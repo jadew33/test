@@ -100,7 +100,7 @@ export default function Internships() {
             type="text"
             placeholder="Search..."
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="p-3 rounded-xl outline-none bg-compsa-white text-compsa-black placeholder:text-compsa-black"
+            className="p-2 rounded-xl outline-none bg-compsa-white text-compsa-black placeholder:text-compsa-black"
           />
           <SearchComponent></SearchComponent>
         </div>
@@ -126,7 +126,7 @@ export default function Internships() {
       ) : (
         <div className="my-8">
           {/*This table is hidden on screens smaller than 768px*/}
-          <table className="hidden md:block table-auto rounded-xl border-collapse text-compsa-black bg-compsa-white text-center w-fit">
+          <table className="max-md:hidden table-auto rounded-xl border-collapse text-compsa-black bg-compsa-white text-center w-full">
             <thead>
               <tr className="font-bold">
                 <th className="px-4 py-4 align-middle">Company</th>
@@ -172,9 +172,9 @@ export default function Internships() {
               ))}
             </tbody>
           </table>
-          <div className="md:hidden mt-4 table-auto rounded-xl border-collapse w-max text-compsa-black bg-compsa-white text-left">
-            <table className="font-book w-max">
-              <thead className="rounded-xl text-xl font-semibold">
+          <div className="md:hidden mt-4 table-auto rounded-xl border-collapse w-full text-compsa-black bg-compsa-white text-left">
+            <table className="font-book w-full">
+              <thead className="text-xl font-semibold">
                 <h6 className="px-4 py-2">Internships</h6>
               </thead>
               <tbody>
@@ -190,11 +190,13 @@ export default function Internships() {
                         index === jobs.length - 1 ? "rounded-bl-lg" : ""
                       }`}
                     >
-                      <td className="pr-8 py-1 font-medium">Company</td>
+                      <td className="pr-8 py-1 font-medium break-words">
+                        Company
+                      </td>
                       <td>{job.company}</td>
                     </tr>
                     <tr className="border px-2 py-2 align-middle">
-                      <td className="pr-8 py-1 font-medium">Role</td>
+                      <td className="pr-8 py-1 font-medium ">Role</td>
                       <td>
                         <a className=" text-compsa-indigo underline" href="">
                           {job.role}
@@ -240,11 +242,11 @@ export default function Internships() {
 
 function SearchComponent() {
   return (
-    <div className="mx-3 bg-compsa-indigo rounded-md p-1">
+    <div className="mx-2 bg-compsa-indigo rounded-md p-1">
       <svg
-        width="1.5em"
-        height="1.5em"
-        viewBox="0 0 25 25"
+        width="1.25em"
+        height="1.25em"
+        viewBox="0 0 25 30"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
