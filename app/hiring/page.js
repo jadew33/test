@@ -94,11 +94,12 @@ export default function Hiring() {
               Campaigning period begins at 12:00am
             </p>
 
-            {/* <p class="event">
+            <p class="event">
               <b className="font-book text-xl">Monday, Nov 20, 2023:</b>
               <br />
-              Candidate Q&A Session (5pm to 6pm Walter Light Hall)
-            </p> */}
+              Candidate Q&A Session from 7pm to 8pm in the COMPSA Office
+              &#40;Goodwin 241&#41;
+            </p>
 
             <p class="event">
               <b className="font-book text-xl">Friday, Nov 24, 2023:</b>
