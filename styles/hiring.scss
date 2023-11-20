@@ -84,9 +84,12 @@
   }
 
   .calender-container {
-    margin-top: 1.5rem;
-    .calender {
-      width: 100%;
+    margin-top: 1rem;
+    line-height: 2;
+
+    .event {
+      margin-bottom: 25px;
+      color: white;
     }
   }
 }
