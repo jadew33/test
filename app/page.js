@@ -4,8 +4,8 @@ import HomepageEventsCard from "/components/home/homepage-events-card";
 export default function Home() {
   const hardcode = [
     {
-      eventName: "Games Night",
-      eventDate: "14",
+      eventName: "Lofi Code Night",
+      eventDate: "28",
       eventMonth: "November",
       eventLocation: "CASLAB",
     },
