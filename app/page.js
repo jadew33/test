@@ -10,7 +10,7 @@ export default function Home() {
       eventLocation: "CASLAB",
     },
     {
-      eventName: "Ugly Sweater Party",
+      eventName: "Holiday Social",
       eventDate: "3",
       eventMonth: "December",
       eventLocation: "CASLAB",
