@@ -89,10 +89,11 @@ export default function About() {
                     <p>Danne Mohamed</p>
                     <p>Khyle Sewpersaud</p>
                     <p>Kevin Yao</p>
+                    <p>Mason Mazzocco</p>
                   </div>
                   <div>
-                    <p>Mason Mazzocco</p>
                     <p>Nicole Hernandez</p>
+                    <p>Syarique Syahrizal</p>
                   </div>
                 </div>
               </div>
@@ -123,7 +124,6 @@ export default function About() {
                     <p>Julia Knott</p>
                     <p>Momin Alvi</p>
                     <p>Shuran Cui</p>
-
                     <p>Vanshita Uthra</p>
                   </div>
                 </div>
