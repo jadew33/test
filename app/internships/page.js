@@ -28,14 +28,7 @@ export default function Internships() {
       .catch((err) => {
         console.error("Error getting jobs: ", err);
       });
-  }, []);
-
-  function formatDateToMonthYear(dateString) {
-    const date = new Date(dateString);
-    const month = date.toLocaleString("default", { month: "long" }); // Converts to the word for the month
-    const year = date.getFullYear();
-    return `${month} ${year}`;
-  }
+  });
 
   useEffect(() => {
     if (jobs === null) {
@@ -88,7 +81,7 @@ export default function Internships() {
       </h1>
       <p className="page-description">
         This is a list of Canadian tech internships for 2024. This list is
-        maintained by the COMPSA Professional Development team at Queen's
+        maintained by the COMPSA Professional Development team at Queen&apos;s
         University.
       </p>
       <Section title="JOB POSTINGS">
@@ -156,10 +149,7 @@ export default function Internships() {
                     {job.location}
                   </td>
                   <td className="border px-2 py-2 align-middle">
-                    {/* {formatDateToMonthYear(
-                      job.startDate + "T12:00:00Z" // This is a hack to make the date render correctly. Otherwise it will be off by a day due to UTC time
-                    )} */}
-                    {/* CHANGE TO START TERM */}
+                    <td>{job.term}</td>
                   </td>
                   <td
                     className={`border px-4 py-2 align-middle ${
@@ -211,12 +201,7 @@ export default function Internships() {
 
                     <tr className="border px-2 py-2 align-middle">
                       <td className="pr-8 py-1 font-medium">Term</td>
-                      <td>
-                        {/* {formatDateToMonthYear(
-                          job.startDate + "T12:00:00Z" // This is a hack to make the date render correctly. Otherwise it will be off by a day due to UTC time
-                        )} */}
-                        {/* CHANGE TO START TERM */}
-                      </td>
+                      <td>{job.term}</td>
                     </tr>
 
                     <tr className="border px-4 py-2 align-middle">
