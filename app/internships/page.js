@@ -11,7 +11,6 @@ export default function Internships() {
   const [searchParam] = useState(["company", "role", "location"]);
   const [jobsCopy, setJobsCopy] = useState(null);
 
-  console.log(jobsCopy);
   useEffect(() => {
     axios
       .get(`https://api.compsa.ca/compsa.ca/internships`, {
@@ -28,7 +27,7 @@ export default function Internships() {
       .catch((err) => {
         console.error("Error getting jobs: ", err);
       });
-  });
+  }, []);
 
   useEffect(() => {
     if (jobs === null) {
