@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   const [expandedBurger, setExpandedBurger] = useState(false);
+  const [desktopBurger, setDesktopBurger] = useState(false);
 
   return (
     <div className="navbar font-book">
@@ -56,6 +57,28 @@ export default function Navbar() {
             />
             COMPSA Merch
           </Link>
+
+          <button
+            onClick={() => setDesktopBurger(!desktopBurger)}
+            className="desktop-burger"
+          >
+            <Image
+              src="/burger-menu.svg"
+              width="40"
+              height="40"
+              alt="Desktop Menu"
+            />
+          </button>
+          {desktopBurger && (
+            <div className="desktop-link-container">
+              <Link href="/events" className="normal-link">
+                Events
+              </Link>
+              <Link href="/internships" className="normal-link">
+                Internships
+              </Link>
+            </div>
+          )}
         </div>
       </div>
 
@@ -113,6 +136,13 @@ export default function Navbar() {
               onClick={() => setExpandedBurger(false)}
             >
               Merch
+            </Link>
+            <Link
+              href="/internships"
+              className="normal-link"
+              onClick={() => setExpandedBurger(false)}
+            >
+              Internships
             </Link>
           </div>
         )}
