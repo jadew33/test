@@ -153,8 +153,7 @@
   $animation-duration: 0.6s;
   background: linear-gradient(
     145deg,
-    darken($compsa-purple, 10%),
-    darken($compsa-purple, 10%) 33%,
+    $compsa-purple,
     $compsa-purple 33%,
     $compsa-purple 66%,
     $compsa-white 66%
@@ -181,9 +180,6 @@
     background-position: 35% 66%;
     background-color: $compsa-purple;
     color: $compsa-white;
-    &::before {
-      background-color: darken($compsa-purple, 10%);
-    }
     p {
       color: $compsa-white;
     }
@@ -193,9 +189,6 @@
       0.95
     ); /* Scale down the button to 95% of its original size */
     background-position: 0 0;
-    &::before {
-      background-color: darken($compsa-purple, 10%);
-    }
   }
 
   h6 {

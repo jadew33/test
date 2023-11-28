@@ -7,10 +7,10 @@ export default function Contact() {
       <h1 className="font-gothamBold text-compsa-yellow">CONTACT US!</h1>
       <div className="contact-grid">
         <p className="text-content text-compsa-white">
-          Leave us a message with concerns or feedback.
+          Leave us a message with any concerns or feedback.
           <br />
-          <br /> Note, if you would like us to get back to you personally,
-          please leave your email!
+          <br /> If you would like us to get back to you personally, please
+          leave your name and email. Otherwise, this form is anonymous.
         </p>
         <input
           className="name-field"
@@ -62,7 +62,7 @@ export default function Contact() {
         <Portfolio
           className="internal-affairs"
           title={"Internal Affairs"}
-          email={"ia@compsa.queensu.ca"}
+          email={"internal@compsa.queensu.ca"}
         ></Portfolio>
         <Portfolio
           className="marketing"
