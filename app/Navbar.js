@@ -36,9 +36,6 @@ export default function Navbar() {
           <Link href="/resources" className="normal-link">
             Resources
           </Link>
-          <Link href="/hiring" className="normal-link">
-            Hiring
-          </Link>
           <Link href="/contact" className="normal-link">
             Contact
           </Link>
@@ -116,18 +113,11 @@ export default function Navbar() {
               Resources
             </Link>
             <Link
-              href="/hiring"
+              href="/internships"
               className="normal-link"
               onClick={() => setExpandedBurger(false)}
             >
-              Hiring
-            </Link>
-            <Link
-              href="/contact"
-              className="normal-link"
-              onClick={() => setExpandedBurger(false)}
-            >
-              Contact
+              Internships
             </Link>
             <Link
               href="https://merch.compsa.ca/en/"
@@ -138,11 +128,18 @@ export default function Navbar() {
               Merch
             </Link>
             <Link
-              href="/internships"
+              href="/events"
               className="normal-link"
               onClick={() => setExpandedBurger(false)}
             >
-              Internships
+              Events
+            </Link>
+            <Link
+              href="/contact"
+              className="normal-link"
+              onClick={() => setExpandedBurger(false)}
+            >
+              Contact
             </Link>
           </div>
         )}
