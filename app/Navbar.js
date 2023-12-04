@@ -36,8 +36,8 @@ export default function Navbar() {
           <Link href="/resources" className="normal-link">
             Resources
           </Link>
-          <Link href="/contact" className="normal-link">
-            Contact
+          <Link href="/internships" className="normal-link">
+            Internships
           </Link>
 
           <Link
@@ -71,8 +71,8 @@ export default function Navbar() {
               <Link href="/events" className="normal-link">
                 Events
               </Link>
-              <Link href="/internships" className="normal-link">
-                Internships
+              <Link href="/contact" className="normal-link">
+                Contact
               </Link>
             </div>
           )}
