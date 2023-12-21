@@ -142,7 +142,7 @@ export default function Internships() {
                     {job.company}
                   </td>
                   <td className="border px-2 py-2 align-middle text-compsa-indigo underline">
-                    <a href="">{job.role}</a>
+                    <a href={job.link}>{job.role}</a>
                   </td>
                   <td className="border px-2 py-2 align-middle">
                     {job.location}
