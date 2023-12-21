@@ -192,6 +192,7 @@ export default function Internships() {
                         <a
                           className=" text-compsa-indigo underline"
                           href={job.link}
+                          target="_blank"
                         >
                           {job.role}
                         </a>
