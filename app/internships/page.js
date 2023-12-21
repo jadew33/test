@@ -142,7 +142,9 @@ export default function Internships() {
                     {job.company}
                   </td>
                   <td className="border px-2 py-2 align-middle text-compsa-indigo underline">
-                    <a target="_blank" href={job.link}>{job.role}</a>
+                    <a target="_blank" href={job.link}>
+                      {job.role}
+                    </a>
                   </td>
                   <td className="border px-2 py-2 align-middle">
                     {job.location}
@@ -187,7 +189,10 @@ export default function Internships() {
                     <tr className="border px-2 py-2 align-middle">
                       <td className="pr-8 py-1 font-medium ">Role</td>
                       <td>
-                        <a className=" text-compsa-indigo underline" href="">
+                        <a
+                          className=" text-compsa-indigo underline"
+                          href={job.link}
+                        >
                           {job.role}
                         </a>
                       </td>
