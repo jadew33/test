@@ -149,8 +149,8 @@ export default function Internships() {
                   <td className="border px-2 py-2 align-middle">
                     {job.location}
                   </td>
-                  <td className="border px-2 py-2 align-middle">
-                    <td>{job.term}</td>
+                  <td className="border px-2 py-2 align-middle text-center">
+                    {job.term}
                   </td>
                   <td
                     className={`border px-4 py-2 align-middle ${
