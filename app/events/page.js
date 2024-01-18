@@ -5,10 +5,12 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Calendar from "../../components/events/Calendar";
 import Slider from "../../components/events/Slider";
+import EventTabs from "../../components/events/EventTabs";
 
 export default function Events() {
   const [events, setEvents] = useState();
   const [current, setCurrent] = useState(new Date());
+  const [tab, setTab] = useState(true);
 
   //get data from api end point
   useEffect(() => {
@@ -33,17 +35,18 @@ export default function Events() {
           <section>
             <h1 className="font-gothamBold">EVENTS</h1>
 
+            <EventTabs changeTab={setTab} currentTab={tab} />
+
+            <Calendar
+              data={events}
+              current={current}
+              onChange={setCurrent}
+              currentTab={tab}
+            />
+
             <div className="section">
               <h2 className="font-medium title">
-                Calendar <hr />
-              </h2>
-            </div>
-
-            <Calendar data={events} current={current} onChange={setCurrent} />
-
-            <div className="section">
-              <h2 className="font-medium title">
-                Event Photos <hr />
+                EVENT PHOTOS <hr />
               </h2>
             </div>
             <Slider />

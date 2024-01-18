@@ -12,7 +12,7 @@ import {
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 
-export default function Calendar({ data, current, onChange }) {
+export default function Calendar({ data, current, onChange, currentTab }) {
   const week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const startDate = startOfMonth(current);
   const endDate = endOfMonth(current);
@@ -20,7 +20,6 @@ export default function Calendar({ data, current, onChange }) {
   const prefixDays = startDate.getDay();
   const [day, setDay] = useState(format(current, "LLLL dd yyyy"));
   const [events, setEvents] = useState([]);
-
   const { width } = useWindowSize();
   const [mobile, setMobile] = useState(false);
 
@@ -34,7 +33,7 @@ export default function Calendar({ data, current, onChange }) {
           /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
         )
       );
-      setMobile(width <= 1024 || mobileDevice);
+      setMobile(width <= 1033 || mobileDevice);
     }
   }, [width]);
 
@@ -75,12 +74,12 @@ export default function Calendar({ data, current, onChange }) {
   }
 
   //rendering mobile
-  return mobile ? (
+  return mobile || !currentTab ? (
     <div className="mt-[3rem] flex flex-col gap-[2rem] w-full">
       {data.map((item, index) =>
         new Date() <= new Date(item.date) ? (
           <div
-            className="flex flex-col py-[1rem] px-[3rem] bg-[#D6D6D6] rounded-lg w-full"
+            className="flex flex-col py-[1rem] px-[3rem] bg-[#F0F0F0] rounded-lg w-full"
             key={index}
           >
             <h2 className="font-gothamBold text-xl">
@@ -136,7 +135,7 @@ export default function Calendar({ data, current, onChange }) {
           return (
             <div
               key={date}
-              className="flex flex-col justify bg-[#D6D6D6] rounded-lg w-[7rem] h-[7rem] max-[1700px]:w-[6rem] max-[1700px]:h-[6rem] max-[1550px]:w-[5rem] max-[1550px]:h-[5rem] max-[1300px]:w-[4rem] max-[1300px]:h-[4rem] max-[1100px]:w-[3.5rem] max-[1100px]:h-[3.5rem] hover:opacity-40"
+              className="flex flex-col justify bg-[#D6D6D6] rounded-lg hover:opacity-40 h-[4rem] xl:h-[4.5rem] 2xl:h-[6rem] min-[1900px]:h-[7.5rem]"
               style={{ boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)" }}
               id={key}
               onClick={() => populateEvent(key)}
@@ -144,7 +143,13 @@ export default function Calendar({ data, current, onChange }) {
               <div>{date}</div>
 
               {/* you could prob make this a grid-col-3 when there are more than 3 events since flex-col wouldn't fit with more than 3 events */}
-              <div className="flex flex-col justify-center items-center gap-[0.5rem]">
+              <div
+                className={`${
+                  matchingEvents.length > 3
+                    ? "grid grid-cols-3 pt-[0.5rem]"
+                    : "flex flex-col"
+                } justify-center items-center gap-[0.2rem] xl:gap-[0.5rem]`}
+              >
                 {/* mapping out the number of events on certain day */}
                 {matchingEvents.map((event, index) => {
                   //alternating between purple, yellow and pink for the event indicators
@@ -155,7 +160,11 @@ export default function Calendar({ data, current, onChange }) {
                   return (
                     //the indicators
                     <div
-                      className="w-[80%] h-[1rem] rounded-lg"
+                      className={`h-[0.7rem] 2xl:h-[1.2rem] rounded-md ${
+                        matchingEvents.length > 3
+                          ? "w-[1rem] 2xl:w-[1.5rem] mx-auto"
+                          : "w-[80%]"
+                      }`}
                       key={index}
                       style={{ backgroundColor: getBackgroundColor(index) }}
                     ></div>
@@ -171,7 +180,7 @@ export default function Calendar({ data, current, onChange }) {
         {events && events.length > 0 ? (
           events.map((item, index) => (
             <div
-              className="flex flex-col py-[1rem] px-[3rem] bg-[#D6D6D6] rounded-lg"
+              className="flex flex-col py-[1rem] px-[3rem] bg-[#F0F0F0] rounded-lg"
               key={index}
             >
               <h2 className="font-gothamBold text-2xl">
@@ -182,7 +191,7 @@ export default function Calendar({ data, current, onChange }) {
             </div>
           ))
         ) : (
-          <div className="flex flex-col w-full py-[1rem] px-[3rem] bg-[#D6D6D6] rounded-lg">
+          <div className="flex flex-col w-full py-[1rem] px-[3rem] bg-[#F0F0F0] rounded-lg">
             <h2 className="font-gothamBold text-2xl">
               {day}: <span className="text-[#5D15D2]">No events available</span>
             </h2>
