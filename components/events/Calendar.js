@@ -11,6 +11,7 @@ import {
 } from "date-fns";
 import { FaAngleLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
+import useMobile from "../../hooks/useMobile";
 
 export default function Calendar({ data, current, onChange, currentTab }) {
   const week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -20,23 +21,8 @@ export default function Calendar({ data, current, onChange, currentTab }) {
   const prefixDays = startDate.getDay();
   const [day, setDay] = useState(format(current, "LLLL dd yyyy"));
   const [events, setEvents] = useState([]);
-  const { width } = useWindowSize();
-  const [mobile, setMobile] = useState(false);
 
-  //check if device/screen size is mobile
-  useEffect(() => {
-    if (width) {
-      const userAgent =
-        typeof navigator === "undefined" ? "" : navigator.userAgent;
-      const mobileDevice = Boolean(
-        userAgent.match(
-          /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
-        )
-      );
-      setMobile(width <= 1033 || mobileDevice);
-    }
-  }, [width]);
-
+  const { mobile } = useMobile();
   //go back one month
   function prevMonth() {
     onChange(sub(current, { months: 1 }));
@@ -109,7 +95,9 @@ export default function Calendar({ data, current, onChange, currentTab }) {
         </button>
 
         {week.map((day) => (
-          <div key={day}>{day}</div>
+          <div className="font-medium" key={day}>
+            {day}
+          </div>
         ))}
         {Array.from({ length: prefixDays }).map((item, index) => (
           <div className="w-[5rem] h-[5rem]" key={index}></div>

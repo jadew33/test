@@ -11,8 +11,9 @@ export default function EventTabs({ changeTab, currentTab }) {
           if (!currentTab) {
             tabSwitch(!currentTab);
           }
+          console.log(currentTab);
         }}
-        className={`text-white text-[30px] whitespace-nowrap ${
+        className={`text-white text-lg whitespace-nowrap ${
           currentTab && "font-gothamBold underline"
         }`}
       >
@@ -24,7 +25,7 @@ export default function EventTabs({ changeTab, currentTab }) {
             tabSwitch(!currentTab);
           }
         }}
-        className={`text-white text-[30px] whitespace-nowrap ${
+        className={`text-white text-lg whitespace-nowrap ${
           !currentTab && "font-gothamBold underline"
         }`}
       >
