@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useWindowSize } from "@uidotdev/usehooks";
 import {
   startOfMonth,
   endOfMonth,
@@ -112,7 +111,7 @@ export default function Calendar({ data, current, onChange, currentTab }) {
           const calendarDate =
             format(current, "MM") + " " + key + " " + format(current, "yyyy");
 
-          //matches event date from api to the calendar date also excludes pass events, I feel like this matchingEvents could be a reusable function but I got a bit lazy
+          //matches event date from api to the calendar date also excludes pass events
           const matchingEvents = data.filter((event) => {
             const eventDate = format(new Date(event.date), "MM dd yyyy");
             return (
