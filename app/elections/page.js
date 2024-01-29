@@ -36,7 +36,7 @@ export default function page() {
             </p>
           ) : (
             <p className="text">
-              The nomination form will be released on{" "}
+              The nomination form will be available after{" "}
               <span className="font-gothamBold">February 2nd, 2024</span>.
             </p>
           )}

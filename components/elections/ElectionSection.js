@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { electionData } from "../../app/elections/electionData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
@@ -11,8 +11,21 @@ export default function ElectionSection({ currentTab }) {
   const Images = ["/Calendar1.png", "/Calendar2.png"];
   const [leftArrow, setLeftArrow] = useState(false);
   const [rightArrow, setRightArrow] = useState(true);
+  const { mobile } = useMobile();
 
   const swiperRef = React.useRef(null);
+
+  useEffect(() => {
+    if (!swiperRef) return null;
+
+    if (swiperRef.current?.swiper?.activeIndex === 0) {
+      setLeftArrow(false);
+      setRightArrow(true);
+    } else if (swiperRef.current?.swiper?.activeIndex === 1) {
+      setRightArrow(false);
+      setLeftArrow(true);
+    }
+  }, [swiperRef, mobile, currentTab]);
 
   const goPrev = () => {
     if (swiperRef.current) {
@@ -29,8 +42,6 @@ export default function ElectionSection({ currentTab }) {
     setRightArrow(false);
     setLeftArrow(true);
   };
-
-  const { mobile } = useMobile();
 
   return (
     <section className="mt-[2rem]">
@@ -57,11 +68,11 @@ export default function ElectionSection({ currentTab }) {
               {electionData.map((item, index) => (
                 <div key={index} className="flex gap-[2rem] min-h-[10rem] ">
                   <div className="flex-1 bg-white rounded-lg min-h-[10rem] py-[1.5rem] px-[1rem] flex flex-col items-center justify-center max-lg:gap-[1rem]">
-                    <div className="font-book flex flex-col gap-[0.25rem] min-[1800px]:flex-row justify-center items-center text-sm lg:text-base">
-                      <div className="">{item.weekDay}</div>
+                    <div className="font-book flex flex-col gap-[0.15rem] min-[1800px]:flex-row justify-center items-center text-sm lg:text-base font-bold">
+                      <div>{item.weekDay}</div>
                       <div>{item.month}</div>
                     </div>
-                    <div className="text-5xl lg:text-5xl  text-[#C686F3] mt-[0.5rem]">
+                    <div className="text-5xl  text-[#C686F3] mt-[0.25rem] font-bold">
                       {item.day}
                     </div>
                   </div>
@@ -69,7 +80,7 @@ export default function ElectionSection({ currentTab }) {
                     <h2 className="font-gothamBold text-2xl text-[#5D15D2]">
                       {item.title}
                     </h2>
-                    <p className="font-book">{item.time}</p>
+                    <p className="font-book text-sm">{item.time}</p>
                     <p className="mt-[.75rem]">{item.description}</p>
                   </div>
                 </div>
@@ -85,7 +96,8 @@ export default function ElectionSection({ currentTab }) {
               <img
                 src={item}
                 alt={`carousel-item-${index}`}
-                className="w-full h-auto"
+                // className="w-30vw h-auto"
+                // className="w-3/4"
               />
             </SwiperSlide>
           ))}
@@ -100,7 +112,7 @@ export default function ElectionSection({ currentTab }) {
           {rightArrow && (
             <button
               onClick={goNext}
-              className="text-[#5D15D2] text-3xl absolute top-[2.5rem] xl:top-[2.5rem] 2xl:top-[3rem] min-[1800px]:top-[4rem] right-20 z-10"
+              className="text-[#5D15D2] text-3xl absolute top-[2.5rem] xl:top-[2.5rem] 2xl:top-[3rem] min-[1800px]:top-[4rem] right-20 2xl:right-32 z-10"
             >
               <FaAngleRight />
             </button>
