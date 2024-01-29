@@ -1,13 +1,11 @@
 "use client";
-
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import EventTabs from "../../components/events/EventTabs";
-import { useState } from "react";
 import ElectionSection from "../../components/elections/ElectionSection";
 import CompsaButton from "../../components/Button";
 
-export default function page() {
+export default function Elections() {
   const [tab, setTab] = useState(true);
   return (
     <main className="elections">

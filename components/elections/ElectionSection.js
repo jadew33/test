@@ -53,7 +53,7 @@ export default function ElectionSection({ currentTab }) {
                 Timeline
               </p>
               {electionData.map((item, index) => (
-                <div className="text">
+                <div className="text" key={index}>
                   <p className="font-book font-bold text-lg">{item.title}</p>
                   <p className="text-sm">
                     {item.weekDay}, {item.month} {item.day} @ {item.time}
