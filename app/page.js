@@ -44,7 +44,8 @@ export default async function Home() {
                       key={index}
                       date={format(item.date, "dd")}
                       month={format(item.date, "MMMM")}
-                      description={item.description}
+                      location={item.location}
+                      name={item.name}
                     />
                   ))}
               </div>
