@@ -91,8 +91,7 @@ export default function ElectionSection({ currentTab }) {
       ) : (
         <Swiper ref={swiperRef}>
           {Images.map((item, index) => (
-            <SwiperSlide key={index} className="relative">
-              {/* Your carousel item content */}
+            <SwiperSlide key={index}>
               <img
                 src={item}
                 alt={`carousel-item-${index}`}
@@ -112,7 +111,7 @@ export default function ElectionSection({ currentTab }) {
           {rightArrow && (
             <button
               onClick={goNext}
-              className="text-[#5D15D2] text-3xl absolute top-[2.5rem] xl:top-[2.5rem] 2xl:top-[3rem] min-[1800px]:top-[4rem] right-20 2xl:right-32 z-10"
+              className="text-[#5D15D2] absolute text-3xl top-[2.5rem] xl:top-[2.5rem] 2xl:top-[3rem] ml-[85%] min-[1800px]:ml-[80%] min-[2000px]:left-[-4rem] z-10"
             >
               <FaAngleRight />
             </button>
