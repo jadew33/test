@@ -20,42 +20,43 @@ export default async function Home() {
         </div>
       </div>
 
-      {events.length !== 0 && (
-        <div className="gradient-bg">
-          <div className="special-heading">
-            <h1 className="font-gothamBold text-compsa-white events-heading">
-              UPCOMING EVENTS
-            </h1>
-          </div>
-
-          <div className="homepage-events">
-            <p className="text-compsa-white text-center events-description">
-              Want to get involved? You&apos;ve come to the right place!{" "}
-            </p>
-
-            <div className="homepage-cards-container">
-              <div className="flex flex-col lg:flex-row gap-[1.5rem]">
-                {events.slice(0, 3).map((item, index) => {
-                  if (new Date() <= new Date(item.date)) {
-                    return (
-                      <HomepageEventsCard
-                        key={index}
-                        date={format(item.date, "dd")}
-                        month={format(item.date, "MMMM")}
-                        description={item.description}
-                      />
-                    );
-                  }
-                })}
-              </div>
+      {events.length !== 0 &&
+        events.some((item) => new Date() <= new Date(item.date)) && (
+          <div className="gradient-bg">
+            <div className="special-heading">
+              <h1 className="font-gothamBold text-compsa-white events-heading">
+                UPCOMING EVENTS
+              </h1>
             </div>
 
-            <Link href="/events" className="text-compsa-white events-button">
-              Go to Events Calendar
-            </Link>
+            <div className="homepage-events">
+              <p className="text-compsa-white text-center events-description">
+                Want to get involved? You&apos;ve come to the right place!{" "}
+              </p>
+
+              <div className="homepage-cards-container">
+                <div className="flex flex-col lg:flex-row gap-[1.5rem]">
+                  {events.slice(0, 3).map((item, index) => {
+                    if (new Date() <= new Date(item.date)) {
+                      return (
+                        <HomepageEventsCard
+                          key={index}
+                          date={format(item.date, "dd")}
+                          month={format(item.date, "MMMM")}
+                          description={item.description}
+                        />
+                      );
+                    }
+                  })}
+                </div>
+              </div>
+
+              <Link href="/events" className="text-compsa-white events-button">
+                Go to Events Calendar
+              </Link>
+            </div>
           </div>
-        </div>
-      )}
+        )}
     </div>
   );
 }

@@ -4,7 +4,7 @@ export default function EventTabs({ changeTab, currentTab }) {
     changeTab(tab);
   }
   return (
-    <section className="flex gap-[3rem] mt-[2rem] items-center max-lg:hidden">
+    <section className="flex gap-[2rem] mt-[2rem] items-center max-lg:hidden">
       <button
         onClick={() => {
           //if not already on current tab

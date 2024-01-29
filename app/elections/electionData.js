@@ -46,8 +46,8 @@ const electionData = [
     month: "Feb",
     day: "26",
     title: "Candidate debate",
-    time: "4:00 pm EST",
-    description: "Candidate debate in Mac Corry B201",
+    time: "6:30 pm EST",
+    description: "Candidate debate in Goodwin 241 (COMPSA Office)",
   },
   {
     weekDay: "Friday",
