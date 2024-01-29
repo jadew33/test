@@ -1,13 +1,11 @@
-export default function HomepageEventsCard({ date, month, location, name }) {
+export default function HomepageEventsCard({ date, month, name, location }) {
   return (
-    <div className="homepage-events-card ">
+    <div className="homepage-events-card">
       <h1 className="date font-gothamBold">{date}</h1>
-      <h2 className="month font-gothamBold">{month}</h2>
-      <div className="mobile-divide">
+      <h2 className="month font-medium">{month}</h2>
+      <div>
         <p className="name text-compsa-indigo font-medium">{name}</p>
-        <p className="location text-compsa-indigo font-medium">
-          &#64; {location}
-        </p>
+        <p className="location font-book">@ {location}</p>
       </div>
     </div>
   );

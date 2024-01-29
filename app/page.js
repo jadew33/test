@@ -1,21 +1,12 @@
 import Link from "next/link";
 import HomepageEventsCard from "/components/home/homepage-events-card";
+import { format } from "date-fns";
+import axios from "axios";
 
-export default function Home() {
-  const events = [
-    // {
-    //   eventName: "Trivia Night",
-    //   eventDate: "13",
-    //   eventMonth: "January",
-    //   eventLocation: "Clark Pub Hall",
-    // },
-    // {
-    //   eventName: "Alumni Mixer",
-    //   eventDate: "20",
-    //   eventMonth: "January",
-    //   eventLocation: "Clark Pub Hall",
-    // },
-  ];
+export default async function Home() {
+  const res = await axios.get("https://api.compsa.ca/compsa.ca/events");
+  const events = res.data;
+
   return (
     <div className="homepage">
       <div className="hero-image-container">
@@ -29,7 +20,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-      {events.length > 0 && (
+
+      {events.length !== 0 && (
         <div className="gradient-bg">
           <div className="special-heading">
             <h1 className="font-gothamBold text-compsa-white events-heading">
@@ -41,18 +33,24 @@ export default function Home() {
             <p className="text-compsa-white text-center events-description">
               Want to get involved? You&apos;ve come to the right place!{" "}
             </p>
-            <div className="homepage-cards-container">
-              {events.map((event, i) => (
-                <HomepageEventsCard
-                  key={i}
-                  date={event.eventDate}
-                  month={event.eventMonth}
-                  name={event.eventName}
-                  location={event.eventLocation}
-                ></HomepageEventsCard>
-              ))}
-            </div>
 
+            <div className="homepage-cards-container">
+              <div className="flex flex-col lg:flex-row gap-[1.5rem]">
+                {events
+                  .sort((a, b) => new Date(a.date) - new Date(b.date))
+                  .filter((item) => new Date() <= new Date(item.date))
+                  .slice(0, 3)
+                  .map((item, index) => (
+                    <HomepageEventsCard
+                      key={index}
+                      date={format(item.date, "dd")}
+                      month={format(item.date, "MMMM")}
+                      location={item.location}
+                      name={item.name}
+                    />
+                  ))}
+              </div>
+            </div>
             <Link href="/events" className="text-compsa-white events-button">
               Go to Events Calendar
             </Link>

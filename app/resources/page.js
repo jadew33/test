@@ -3,7 +3,7 @@ import Link from "/components/resources/Link";
 
 export default function Resources() {
   return (
-    <div className="resources ">
+    <div className="resources">
       <div className="content">
         <h1 className="font-gothamBold">RESOURCES</h1>
         <p>
