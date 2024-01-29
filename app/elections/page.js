@@ -1,9 +1,7 @@
 "use client";
-
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import EventTabs from "../../components/events/EventTabs";
-import { useState } from "react";
 import ElectionSection from "../../components/elections/ElectionSection";
 import CompsaButton from "../../components/Button";
 
