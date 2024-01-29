@@ -20,8 +20,9 @@ export default async function Home() {
         </div>
       </div>
 
-      {events.length !== 0 &&
-        events.some((item) => new Date() <= new Date(item.date)) && (
+      {
+        events.length !== 0 && (
+          // events.some((item) => new Date() <= new Date(item.date)) && (
           <div className="gradient-bg">
             <div className="special-heading">
               <h1 className="font-gothamBold text-compsa-white events-heading">
@@ -56,7 +57,9 @@ export default async function Home() {
               </Link>
             </div>
           </div>
-        )}
+        )
+        // )
+      }
     </div>
   );
 }
