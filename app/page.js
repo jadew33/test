@@ -37,6 +37,7 @@ export default async function Home() {
             <div className="homepage-cards-container">
               <div className="flex flex-col lg:flex-row gap-[1.5rem]">
                 {events
+                  .sort((a, b) => new Date(a.date) - new Date(b.date))
                   .filter((item) => new Date() <= new Date(item.date))
                   .slice(0, 3)
                   .map((item, index) => (
