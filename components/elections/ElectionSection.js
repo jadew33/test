@@ -69,10 +69,10 @@ export default function ElectionSection({ currentTab }) {
                 <div key={index} className="flex gap-[2rem] min-h-[10rem] ">
                   <div className="flex-1 bg-white rounded-lg min-h-[10rem] py-[1.5rem] px-[1rem] flex flex-col items-center justify-center max-lg:gap-[1rem]">
                     <div className="font-book flex flex-col gap-[0.15rem] min-[1800px]:flex-row justify-center items-center text-sm lg:text-base font-bold">
-                      <div>{item.weekDay}</div>
+                      <div className="mr-1">{item.weekDay}</div>
                       <div>{item.month}</div>
                     </div>
-                    <div className="text-5xl  text-[#C686F3] mt-[0.25rem] font-bold">
+                    <div className="text-[2.5rem]  text-[#C686F3] mt-[0.25rem] font-bold">
                       {item.day}
                     </div>
                   </div>
