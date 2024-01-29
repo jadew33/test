@@ -7,7 +7,7 @@ import { useState } from "react";
 import ElectionSection from "../../components/elections/ElectionSection";
 import CompsaButton from "../../components/Button";
 
-export default function page() {
+export default function Elections() {
   const [tab, setTab] = useState(true);
   return (
     <main className="elections">
