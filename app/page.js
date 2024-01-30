@@ -1,12 +1,9 @@
 import Link from "next/link";
 import HomepageEventsCard from "/components/home/homepage-events-card";
 import { format } from "date-fns";
-import axios from "axios";
 
-export default async function Home() {
-  const res = await axios.get("https://api.compsa.ca/compsa.ca/events");
-  const events = res.data;
-
+export default function Home() {
+  // const events = await getData();
   return (
     <div className="homepage">
       <div className="hero-image-container">
@@ -21,7 +18,7 @@ export default async function Home() {
         </div>
       </div>
 
-      {events.length !== 0 && (
+      {/* {events.length !== 0 && (
         <div className="gradient-bg">
           <div className="special-heading">
             <h1 className="font-gothamBold text-compsa-white events-heading">
@@ -56,7 +53,12 @@ export default async function Home() {
             </Link>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
+
+// async function getData() {
+//   const res = await fetch("https://api.compsa.ca/compsa.ca/events");
+//   return res.json();
+// }

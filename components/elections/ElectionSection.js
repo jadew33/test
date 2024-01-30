@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import "swiper/css";
 import useMobile from "../../hooks/useMobile";
-import { set } from "date-fns";
 
 export default function ElectionSection({ currentTab }) {
   const Images = ["/Calendar1.png", "/Calendar2.png"];
