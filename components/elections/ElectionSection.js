@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { electionData } from "../../app/elections/electionData";
+import { electionData } from "./electionData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import "swiper/css";
