@@ -1,9 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
-import EventTabs from "../../components/events/EventTabs";
-import ElectionSection from "../../components/elections/ElectionSection";
-import CompsaButton from "../../components/Button";
+import EventTabs from "/components/events/EventTabs";
+import ElectionSection from "/components/elections/ElectionSection";
+import CompsaButton from "/components/Button";
 
 export default function Elections() {
   const [tab, setTab] = useState(true);
@@ -21,12 +20,12 @@ export default function Elections() {
           {new Date() > new Date("2024-02-02") ? (
             <p className="text">
               Complete the nomination form found{" "}
-              <Link
+              <a
                 className="text-purple-400"
                 href="https://forms.gle/aekBrnEnCYX8HeBZ7"
               >
                 here{" "}
-              </Link>
+              </a>
               no later than{" "}
               <span className="font-gothamBold ">
                 11:30 P.M on Friday, February 9th, 2024.{" "}
